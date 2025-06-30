@@ -1,0 +1,41 @@
+# Dependencias de Node
+/node_modules
+/.pnp
+.pnp.js
+
+# Producción
+/dist
+/build
+/out
+
+# Archivos de depuración y registro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.DS_Store
+.env.local
+.env.*.local
+.vscode/
+
+# IDEs y editores (JetBrains WebStorm, VS Code, etc.)
+.idea/             # Directorio de WebStorm/IntelliJ
+*.iml              # Archivos de módulos de IntelliJ
+*.ipr              # Archivos de proyecto de IntelliJ
+*.iws              # Archivos de espacio de trabajo de IntelliJ
+*.sublime-project
+*.sublime-workspace
+.metadata
+.project
+.classpath
+
+# Variables de entorno
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Otros
+coverage/
+*.log
+*.log.*
