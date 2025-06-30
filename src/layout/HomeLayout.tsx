@@ -9,7 +9,7 @@ export default function HomeLayout() {
                 <header className='bg-white font-serif grid p-3 border-black border-b-1'>
                     <h1 className=' text-4xl antialiased italic uppercase font-semibold'>Visita guaymas</h1>
                     <div className="flex justify-between ">
-                        <h2 className='italic p-1 flex-col justify-center text-2xl'>Descubriendo negocios </h2>
+                        <h2 className='italic p-1 flex-col justify-center text-2xl'>Tu guía esencial para encontrar lo mejor. </h2>
                         <Link className='border-black border-2  p-1 rounded-full' to="/">Guaymas, Sonora, Mexico</Link>
                     </div>
                 </header>
@@ -26,7 +26,7 @@ export default function HomeLayout() {
                     <Outlet/>
                 </div>
                 <footer className='text-white text-center p-2'>
-                    <nav className="grid flex capitalize">
+                    <nav className=" grid capitalize">
                         <Link className='text-white' to="/">Home</Link>
                         <Link className='text-white' to="/about">Acerca de nosotros</Link>
                     </nav>

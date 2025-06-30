@@ -8,7 +8,7 @@ export default function  Router(){
         <BrowserRouter>
             <Routes>
                 <Route element={<HomeLayout />}>
-                    <Route path="/home" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                 </Route>
             </Routes>
