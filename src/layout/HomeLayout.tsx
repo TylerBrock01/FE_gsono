@@ -13,9 +13,9 @@ export default function HomeLayout() {
                         <Link className='border-black border-2  p-1 rounded-full' to="/">Guaymas, Sonora, Mexico</Link>
                     </div>
                 </header>
-                <section className=' bg-white text-cyan-600 p-1 border-black border-b-1 flex justify-between'>
+                <section className=' bg-white text-cyan-600 p-1 border-black border-b-1 flex justify-between pr-2 pl-2'>
                     <h1 className='font-serif'>Encuentra tu proxima aventura en Guaymas!</h1>
-                    <nav className='flex italic justify-start gap-2 '>
+                    <nav className='flex italic justify-start gap-2'>
                         <Link className='capitalize underline' to="/">gastronomia</Link>
                         <Link className='capitalize underline' to="/">compras</Link>
                         <Link className='capitalize underline' to="/">experiencia</Link>
