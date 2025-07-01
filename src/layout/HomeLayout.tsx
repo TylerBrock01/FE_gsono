@@ -23,7 +23,7 @@ export default function HomeLayout() {
                     </div>
                 </header>
                 <section className=' bg-white p-1 border-black border-b-1 sm:grid md:flex md:justify-between pr-2 pl-2'>
-                    <h1 className='font-serif text-cyan-600 flex justify-center'>Encuentra tu proxima aventura en Guaymas!</h1>
+                    <h1 className='font-serif text-cyan-600 flex justify-center items-center'>Encuentra tu proxima aventura en Guaymas!</h1>
                     <nav className='flex italic md:justify-start gap-2 text-gray-100'>
                         <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">gastronomia</Link>
                         <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">compras</Link>
