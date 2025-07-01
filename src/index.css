@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.hero{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/04/36/77/93/1000_F_436779328_GTHvkR1t6hZWMGaJnQG0L4BizAdqIAQO.jpg");
+}
