@@ -7,7 +7,7 @@ export default function HomeLayout() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Starkiller Team</title>
             <body className='bg-black min-h-screen'>
-                <header className='bg-white font-serif grid p-3 border-black border-b-1'>
+                <header className='bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center text-white font-serif grid p-3 border-black border-b-1'>
                     <h1 className=' text-4xl antialiased italic uppercase font-semibold'>explora guaymas</h1>
                     <h2 className='italic p-1 flex-col justify-center text-2xl underline'>Tu guía esencial para encontrar lo mejor. </h2>
                     <div className="row-start-1 md:row-start-3 flex">

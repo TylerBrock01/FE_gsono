@@ -7,8 +7,8 @@ export default function Home() {
             {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
-                <div className='hero'>
-                    <div className='bg-black/50 p-3 flex flex-col justify-center h-180 gap-4'>
+                <div className='bg-[url("/src/img/hero1.jpg")] bg-cover bg-no-repeat'>
+                    <div className='bg-black/50 p-3 flex flex-col justify-center gap-4'>
                         <div>
                             <h1 className=' capitalize text-6xl decoration-cyan-600 decoration-3 underline-offset-8 underline font-serif'>
                                 bienvenido a guaymas
