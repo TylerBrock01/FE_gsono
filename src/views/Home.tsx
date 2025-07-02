@@ -1,6 +1,6 @@
 import { Link} from 'react-router-dom'
-import persy from '../img/persy.jpg'
-import dona from '../img/dona.jpg'
+// import persy from '../img/persy.jpg'
+// import dona from '../img/dona.jpg'
 export default function Home() {
     return(
         <>
