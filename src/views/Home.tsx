@@ -4,6 +4,7 @@ import dona from '../img/dona.jpg'
 export default function Home() {
     return(
         <>
+            {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
                 <div className='hero'>
@@ -26,9 +27,10 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/*main*/}
             <main className=' text-white font-serif border-l-10 border-cyan-600'>
+                {/*month bussines*/}
                 <h1 className='  text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Negocio del Mes!</h1>
-
                 <article className=' bg-white text-black capitalize p-2 '>
                     <h2 className=' text-3xl flex gap-2 pb-1'>
                         <svg
@@ -78,8 +80,8 @@ export default function Home() {
                         </aside>
                     </div>
                 </article>
+                {/*last bussines opened*/}
                 <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Recien abiertos!</h1>
-
                 <article className=' bg-white text-black capitalize p-2 '>
                     <h2 className=' capitalize text-3xl flex gap-2 pb-1'>
                         <svg
@@ -128,6 +130,11 @@ export default function Home() {
                         </aside>
                     </div>
                 </article>
+                {/*hot bussines*/}
+                <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>Mas Populares</h1>
+                {/*community bussined loved*/}
+                <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>recomendado por la comunidad</h1>
+
             </main>
         </>
     )
