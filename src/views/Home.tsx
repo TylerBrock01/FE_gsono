@@ -48,7 +48,7 @@ export default function Home() {
                         <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
                             <div className=' justify-center p-1 grid gap-1'>
                                 {/*image bussines*/}
-                                {/*<img className=" lg:h-80" src={persy} alt='persy'/>*/}
+                                <img className=" lg:h-80" src={'https://as2.ftcdn.net/v2/jpg/00/63/09/65/1000_F_63096517_WFNDiMYu4rKrtgxa2DgZCVgEzOmp2JHP.jpg'} alt='persy'/>
                                 {/*social link bussines*/}
                                 <Link className='bg-blue-600 flex text-white justify-center items-center gap-1' to='/'>
                                     <svg className="w-6 h-6  " aria-hidden="true"
@@ -118,7 +118,7 @@ export default function Home() {
                         <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
                             <div className=' justify-center p-1 grid gap-1'>
                                 {/*image bussines*/}
-                                {/*<img className=" lg:h-80" src={dona} alt='persy'/>*/}
+                                <img className=" lg:h-80" src={'https://as1.ftcdn.net/v2/jpg/03/05/92/84/1000_F_305928424_visqTeQnMLvzfT3XBtDZWX9TNTlVLML6.jpg'} alt='persy'/>
                                 {/*social link bussines*/}
                                 <Link className='bg-blue-600 flex text-white justify-center items-center gap-1' to='/'>
                                     <svg className="w-6 h-6  " aria-hidden="true"
