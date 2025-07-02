@@ -8,12 +8,12 @@ export default function HomeLayout() {
             <title>Starkiller Team</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
             <body className='bg-black min-h-screen'>
-                <header className='z-0 bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
-                    <div className=' font-serif grid p-3 border-black border-b-1 z-1 bg-black/70 text-white'>
+                <header className=' bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
+                    <div className='lg:h-45 font-serif grid p-3 border-black border-b-1 z-1 bg-black/60 text-white'>
                         <h1 className=' text-4xl  italic capitalize font-semibold'>explora guaymas</h1>
                         <h2 className='italic p-1 flex-col justify-center text-2xl underline'>Tu guía esencial para encontrar lo mejor. </h2>
                         <div className="row-start-1 md:row-start-3 flex">
-                            <Link className='p-1 rounded-full flex justify-center gap-1 bg-cyan-500' to="/">
+                            <Link className='p-1 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/">
                                 <h2>Guaymas, Sonora, Mexico</h2>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
