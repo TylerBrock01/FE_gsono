@@ -7,16 +7,15 @@ export default function Home() {
             {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
-                <div className='bg-[url("/src/img/hero1.jpg")] bg-cover bg-no-repeat'>
-                    <div className='bg-black/50 p-3 flex flex-col justify-center gap-4'>
-                        <div>
+                <div className='bg-[url("/src/img/hero1.jpg")] bg-cover bg-no-repeat bg-right'>
+                    <div className='bg-black/50 p-3 flex flex-col justify-center gap-4 h-120 md:h-130 lg:h-screen'>
+                        <div className='grid'>
                             <h1 className=' capitalize text-6xl decoration-cyan-600 decoration-3 underline-offset-8 underline font-serif'>
                                 bienvenido a guaymas
                             </h1>
                             <h2 className='text-3xl'>El puerto de la experiencia</h2>
                         </div>
-
-                        <div>
+                        <div className='grid'>
                             <article>
                                 <Link to="/" className=' text-xl capitalize text-cyan-400 underline'>proximos eventos</Link>
                                 <p className='font-serif'>
