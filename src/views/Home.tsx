@@ -1,5 +1,6 @@
 import { Link} from 'react-router-dom'
 import persy from '../img/persy.jpg'
+import dona from '../img/dona.jpg'
 export default function Home() {
     return(
         <>
@@ -80,7 +81,7 @@ export default function Home() {
                 <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Recien abiertos!</h1>
 
                 <article className=' bg-white text-black capitalize p-2 '>
-                    <h2 className=' text-3xl flex gap-2 pb-1'>
+                    <h2 className=' capitalize text-3xl flex gap-2 pb-1'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
@@ -100,9 +101,9 @@ export default function Home() {
                         </svg>
 
 
-                        Hot dogs: el persy'</h2>
+                        doneria mingosho</h2>
                     <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
-                        <img className='w-80 col-start-2 col-end-2 h-auto p-1' src={persy} alt='persy'/>
+                        <img className='w-80 col-start-2 col-end-2 h-auto p-1' src={dona} alt='persy'/>
                         <aside className='grid row-start-1  gap-2  p-3'>
                             <h2 className='text-cyan-600'>Descripcion</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum non lorem eget vulputate. Suspendisse facilisis erat et justo pulvinar lobortis. Morbi sit amet libero sodales, fringilla felis quis, cursus sapien. Suspendisse potenti. Cras lectus mauris, commodo a tellus eget, porttitor aliquam est. Ut vulputate sodales luctus. Fusce consequat porttitor ornare. Aliquam scelerisque libero dui, sed sodales tellus vestibulum vitae. Aenean sed mi tincidunt, tincidunt tortor sit amet, gravida ipsum.
