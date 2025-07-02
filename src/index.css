@@ -1,16 +1,8 @@
 @import "tailwindcss";
 
 .hero{
-    background-size: cover;
     /*background-position: right;*/
-    background-repeat: no-repeat;
     /*background-image: url("https://as2.ftcdn.net/v2/jpg/04/36/77/93/1000_F_436779328_GTHvkR1t6hZWMGaJnQG0L4BizAdqIAQO.jpg");*/
     /*background-image: url("https://as1.ftcdn.net/v2/jpg/01/98/75/10/1000_F_198751030_8r1Hb1zsOADtQGJKez1uQbVs4PI2gBAe.jpg");*/
     background-image: url("/src/img/hero.jpg");
-}
-.hero2{
-    background-image: url("https://as2.ftcdn.net/v2/jpg/02/96/22/85/1000_F_296228520_0JlrAWlmH7cJJ0fzi0zG0j7VYIgYyhmo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
