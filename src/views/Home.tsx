@@ -1,23 +1,25 @@
 import { Link} from 'react-router-dom'
-// import persy from '../img/persy.jpg'
-// import dona from '../img/dona.jpg'
 export default function Home() {
     return(
         <>
             {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
+                {/*photo bg*/}
                 <div className='bg-[url("/src/img/hero1.jpg")] bg-cover bg-no-repeat bg-right lg:bg-top-right'>
+                    {/*content*/}
                     <div className='bg-black/50 p-3 flex flex-col justify-center gap-4 h-120 md:h-130 lg:h-screen'>
+                        {/*title*/}
                         <div className='grid'>
                             <h1 className=' capitalize text-6xl decoration-cyan-600 decoration-3 underline-offset-8 underline font-serif'>
                                 bienvenido a guaymas
                             </h1>
                             <h2 className='text-3xl'>El puerto de la experiencia</h2>
                         </div>
-                        <div className='grid'>
-                            <article>
-                                <Link to="/" className=' text-xl capitalize text-cyan-400 underline'>proximos eventos</Link>
+                        {/*articles*/}
+                        <div className='grid bg-cyan-600/40 p-2'>
+                            <article className='gap-2'>
+                                <Link to="/" className=' text-xl capitalize underline'>proximos eventos</Link>
                                 <p className='font-serif'>
                                     Cras pharetra tempus imperdiet. Aenean at varius elit. Vestibulum tincidunt sapien eu turpis ornare, vitae efficitur nunc euismod. Aenean posuere ipsum orci. Vivamus consectetur mollis nulla, eu vehicula mi feugiat in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                                 </p>
