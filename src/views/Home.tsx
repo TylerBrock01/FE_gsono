@@ -19,7 +19,7 @@ export default function Home() {
                         {/*articles*/}
                         <div className='grid bg-cyan-600/40 p-2'>
                             <article className='gap-2'>
-                                <Link to="/" className=' text-xl capitalize underline'>proximos eventos</Link>
+                                <Link to="/" className=' text-xl capitalize underline'>proximos eventos!</Link>
                                 <p className='font-serif'>
                                     Cras pharetra tempus imperdiet. Aenean at varius elit. Vestibulum tincidunt sapien eu turpis ornare, vitae efficitur nunc euismod. Aenean posuere ipsum orci. Vivamus consectetur mollis nulla, eu vehicula mi feugiat in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                                 </p>
