@@ -13,7 +13,7 @@ export default function HomeLayout() {
                         <h1 className=' text-4xl  italic capitalize font-semibold'>explora guaymas</h1>
                         <h2 className='italic p-1 flex-col justify-center text-2xl underline'>Tu guía esencial para encontrar lo mejor. </h2>
                         <div className="row-start-1 md:row-start-3 flex">
-                            <Link className='p-1 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/">
+                            <Link className='p-1 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/register">
                                 <h2>Guaymas, Sonora, Mexico</h2>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
