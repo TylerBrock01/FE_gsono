@@ -3,9 +3,9 @@ export default function Register() {
         <>
             <h1 className='text-3xl text-white capitalize'>registrar nuevo negocio</h1>
             <div className='bg-cyan-600 text-white flex flex-col items-center p-2 '>
-                <form className='p-1 border-black border-2 capitalize bg-cyan-800'>
+                <form className='p-1 border-black border-2 capitalize bg-black/60'>
                     <h2 className='text-xl'>nombre del negocio</h2>
-                    <input className='bg-gray-400 rounded-full' type='text' placeholder='negociuu'/>
+                    <input className='bg-cyan-800 rounded-full' type='text'/>
                     {/*<h2 className='text-xl'>logo</h2>*/}
                     {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='logo' disabled={true}/>*/}
                     {/*<h2 className='text-xl'>direccion</h2>*/}
