@@ -1,25 +1,27 @@
 export default function Register() {
     return(
         <>
-            <h1 className='text-3xl text-white capitalize'>registrar nuevo negocio</h1>
-            <div className='bg-cyan-600 text-white flex flex-col items-center p-2 '>
-                <form className='p-1 border-black border-2 capitalize bg-black/60'>
-                    <h2 className='text-xl'>nombre del negocio</h2>
-                    <input className='bg-cyan-800 rounded-full' type='text'/>
-                    {/*<h2 className='text-xl'>logo</h2>*/}
-                    {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='logo' disabled={true}/>*/}
-                    {/*<h2 className='text-xl'>direccion</h2>*/}
-                    {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='direccion'disabled={true}/>*/}
-                    {/*<h2 className='text-xl'>facebook</h2>*/}
-                    {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='facebook'disabled={true}/>*/}
-                    {/*<h2 className='text-xl'>instagram</h2>*/}
-                    {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='instagram'disabled={true}/>*/}
-                    {/*<h2 className='text-xl'>descripcion</h2>*/}
-                    {/*<input className='bg-gray-400 rounded-full' type='text' placeholder='descripcion'disabled={true}/>*/}
-                    <h2 className='text-xl'>precio</h2>
-                    <h2 className='text-xl'>cadena</h2>
-                </form>
-            </div>
+            <form
+                onSubmit={() => {}}
+                className="bg-white px-5 py-20 rounded-lg space-y-10 mt-10"
+            >
+                <div className="grid grid-cols-1 space-y-3">
+                    <label htmlFor="name" className="text-2xl text-slate-500">Nombre</label>
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Tu Nombre"
+                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                    />
+                </div>
+
+
+                <input
+                    type="submit"
+                    className="bg-cyan-400 p-3 text-lg w-full uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
+                    value='Crear Cuenta'
+                />
+            </form>
         </>
     )
 }
