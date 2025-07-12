@@ -38,12 +38,13 @@ export default function HomeLayout() {
                 <div>
                     <Outlet/>
                 </div>
-                <footer className='text-white text-center p-2'>
-                    <nav className=" grid capitalize">
-                        <Link className='text-white' to="/">Home</Link>
-                        <Link className='text-white' to="/about">Acerca de nosotros</Link>
+                <footer className='text-white p-2'>
+                    <nav className=" grid justify-center capitalize gap-1">
+                        <Link className='text-white bg-cyan-800  flex justify-center rounded-full' to="/">Home</Link>
+                        <Link className='text-white bg-gray-400' to="/about">Acerca de nosotros</Link>
+                        <h2 className='flex justify-center'>Copyright 2025</h2>
+
                     </nav>
-                    <h2>Copyright 2025</h2>
                 </footer>
             </div>
 
