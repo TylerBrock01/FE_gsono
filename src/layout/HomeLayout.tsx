@@ -7,7 +7,7 @@ export default function HomeLayout() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Starkiller Team</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
-            <body className='bg-black min-h-screen'>
+            <div className='bg-black min-h-screen'>
                 <header className=' bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
                     <div className='lg:h-45 font-serif grid p-3 border-black border-b-1 z-1 bg-black/60 text-white'>
                         <h1 className=' text-4xl  italic capitalize font-semibold'>explora guaymas</h1>
@@ -45,7 +45,7 @@ export default function HomeLayout() {
                     </nav>
                     <h2>Copyright 2025</h2>
                 </footer>
-            </body>
+            </div>
 
         </>
     )
