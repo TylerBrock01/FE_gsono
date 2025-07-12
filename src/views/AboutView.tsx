@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-export default function About() {
+export default function AboutView() {
     return(
         <>
             <h1 className='bg-purple-500 text-6xl'>Acerca de nosotros</h1>
