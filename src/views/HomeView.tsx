@@ -116,12 +116,12 @@ export default function HomeView() {
                                       stroke-width="2"
                                       d="M6 12c.263 0 .524-.06.767-.175a2 2 0 0 0 .65-.491c.186-.21.333-.46.433-.734.1-.274.15-.568.15-.864a2.4 2.4 0 0 0 .586 1.591c.375.422.884.659 1.414.659.53 0 1.04-.237 1.414-.659A2.4 2.4 0 0 0 12 9.736a2.4 2.4 0 0 0 .586 1.591c.375.422.884.659 1.414.659.53 0 1.04-.237 1.414-.659A2.4 2.4 0 0 0 16 9.736c0 .295.052.588.152.861s.248.521.434.73a2 2 0 0 0 .649.488 1.809 1.809 0 0 0 1.53 0 2.03 2.03 0 0 0 .65-.488c.185-.209.332-.457.433-.73.1-.273.152-.566.152-.861 0-.974-1.108-3.85-1.618-5.121A.983.983 0 0 0 17.466 4H6.456a.986.986 0 0 0-.93.645C5.045 5.962 4 8.905 4 9.736c.023.59.241 1.148.611 1.567.37.418.865.667 1.389.697Zm0 0c.328 0 .651-.091.94-.266A2.1 2.1 0 0 0 7.66 11h.681a2.1 2.1 0 0 0 .718.734c.29.175.613.266.942.266.328 0 .651-.091.94-.266.29-.174.537-.427.719-.734h.681a2.1 2.1 0 0 0 .719.734c.289.175.612.266.94.266.329 0 .652-.091.942-.266.29-.174.536-.427.718-.734h.681c.183.307.43.56.719.734.29.174.613.266.941.266a1.819 1.819 0 0 0 1.06-.351M6 12a1.766 1.766 0 0 1-1.163-.476M5 12v7a1 1 0 0 0 1 1h2v-5h3v5h7a1 1 0 0 0 1-1v-7m-5 3v2h2v-2h-2Z"/>
                             </svg>
-                            bazar don ast
+                            cahuamanta marin'
                         </h2>
                         <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
                             <div className=' justify-center p-1 grid gap-1'>
                                 {/*image bussines*/}
-                                <img className=" lg:h-80" src={'https://as1.ftcdn.net/v2/jpg/03/05/92/84/1000_F_305928424_visqTeQnMLvzfT3XBtDZWX9TNTlVLML6.jpg'} alt='persy'/>
+                                <img className=" lg:h-80" src={'https://as2.ftcdn.net/v2/jpg/03/88/88/17/1000_F_388881787_JKT8eLkJuAx5ci5BCqgDuXVyZ7ELAhiJ.jpg'} alt='persy'/>
                                 {/*social link bussines*/}
                                 <Link className='bg-blue-600 flex text-white justify-center items-center gap-1' to='/'>
                                     <svg className="w-6 h-6  " aria-hidden="true"
@@ -131,7 +131,7 @@ export default function HomeView() {
                                               d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    bazar don ast
+                                    cahuamanta marin
                                 </Link>
                                 <Link className='bg-pink-400 flex text-white justify-center items-center gap-1' to='/'>
                                     <svg className="w-6 h-6 " aria-hidden="true"
@@ -141,7 +141,7 @@ export default function HomeView() {
                                               d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    bazar don ast
+                                    cahuamanta marin
                                 </Link>
                             </div>
 
@@ -157,7 +157,7 @@ export default function HomeView() {
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                               d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                                     </svg>
-                                    30-50 C/U
+                                    30-180 C/U
                                 </p>
                                 <Link className='  bg-cyan-600  p-1 rounded-full flex justify-center items-center  text-white ' to="/">
 
