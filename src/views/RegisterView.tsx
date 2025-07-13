@@ -29,7 +29,7 @@ export default function RegisterView() {
                     <div className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl text-white capitalize">URL logo</label>
                         <input
-                            id="name"
+                            id="logo"
                             type="url"
                             placeholder="Logo"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
@@ -40,7 +40,7 @@ export default function RegisterView() {
                     <div className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl text-white capitalize">URL ubicacion</label>
                         <input
-                            id="name"
+                            id="location"
                             type="url"
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
@@ -51,7 +51,7 @@ export default function RegisterView() {
                     <div className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl text-white capitalize">URL facebook</label>
                         <input
-                            id="name"
+                            id="face"
                             type="url"
                             placeholder="Facebook"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
@@ -62,7 +62,7 @@ export default function RegisterView() {
                     <div className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl text-white capitalize">URL instagram</label>
                         <input
-                            id="name"
+                            id="insta"
                             type="url"
                             placeholder="Instagram"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
@@ -71,10 +71,12 @@ export default function RegisterView() {
                     </div>
                     {/*/!*description*!/*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize">URL ubicacion</label>
-                        <input
-                            id="name"
-                            type="url"
+                        <label htmlFor="name" className="text-2xl text-white capitalize"> descripcion</label>
+                        <textarea
+                            id="description"
+                            minLength={250}
+                            rows={4}
+                            maxLength={500}
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
                             {...register('name', {required: 'ubicacion es requerido'})}
