@@ -7,16 +7,17 @@ export default function RegisterView() {
     }
     return(
         <>
+            <h1 className="text-4xl bg-cyan-600 text-white text-center capitalize py-1">agregar Nuevo negocio</h1>
+
             <form
                 onSubmit={handleSubmit(handleRegister)}
-                className=" bg-cyan-800 gap-2 p-2 border-black border-b-1"
+                className=" bg-cyan-800 gap-2 py-2 border-black border-b-1 flex flex-col md:items-center"
             >
-                <h1 className="text-4xl bg-cyan-600 text-white text-center capitalize py-1">agregar Nuevo negocio</h1>
-                <div className='bg-gray-400 py-2 flex flex-col md:items-center gap-2'>
+                <div className='bg-white rounded-2xl mt-2 mb-2 gap-2 p-2 px-4'>
                     {/*name*/}
                     <div className="grid grid-cols-1 space-y-3">
                         {/*name*/}
-                        <label htmlFor="name" className="text-2xl text-white capitalize">nombre de negocio</label>
+                        <label htmlFor="name" className="text-2xl capitalize">nombre de negocio</label>
                         <input
                             id="name"
                             type="text"
@@ -27,7 +28,7 @@ export default function RegisterView() {
                     </div>
                     {/*logo*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize">URL logo</label>
+                        <label htmlFor="name" className="text-2xl  capitalize">URL logo</label>
                         <input
                             id="logo"
                             type="url"
@@ -38,7 +39,7 @@ export default function RegisterView() {
                     </div>
                     {/*/!*location*!/*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize">URL ubicacion</label>
+                        <label htmlFor="name" className="text-2xl  capitalize">URL ubicacion</label>
                         <input
                             id="location"
                             type="url"
@@ -49,7 +50,7 @@ export default function RegisterView() {
                     </div>
                     {/*/!*social*!/*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize">URL facebook</label>
+                        <label htmlFor="name" className="text-2xl  capitalize">URL facebook</label>
                         <input
                             id="face"
                             type="url"
@@ -60,7 +61,7 @@ export default function RegisterView() {
                     </div>
                     {/*/!*social 0*!/*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize">URL instagram</label>
+                        <label htmlFor="name" className="text-2xl  capitalize">URL instagram</label>
                         <input
                             id="insta"
                             type="url"
@@ -71,7 +72,7 @@ export default function RegisterView() {
                     </div>
                     {/*/!*description*!/*/}
                     <div className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl text-white capitalize"> descripcion</label>
+                        <label htmlFor="description" className="text-2xl  capitalize"> descripcion</label>
                         <textarea
                             id="description"
                             minLength={250}
@@ -82,13 +83,27 @@ export default function RegisterView() {
                             {...register('name', {required: 'ubicacion es requerido'})}
                         />
                     </div>
-
+                    {/*chain*/}
+                    <div className="grid grid-cols-1 space-y-3">
+                        <label htmlFor={"chain"} className="  capitalize">Tipo:</label>
+                        <select className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
+                                {...register('chain', {required: 'tipo'})} >
+                            <option value="default" disabled={true} selected={true}>seleccione</option>
+                            <option value="gastronomia">gastronomia</option>
+                            <option value="compras">compras</option>
+                            <option value="experiencia">experiencia</option>
+                            <option value="servicio">servicio</option>
+                        </select>
+                    </div>
                     {/*enviar*/}
-                    <input
-                        type="submit"
-                        className=" bg-cyan-400 p-3 text-lg uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
-                        value='Crear Cuenta'
-                    />
+                    <div className="flex justify-center m-4">
+                        <input
+                            type="submit"
+                            className=" bg-cyan-400 p-3 text-lg uppercase text-slate-600 rounded-lg font-bold cursor-pointer "
+                            value='Crear Cuenta'
+                        />
+                    </div>
+
                 </div>
 
             </form>
