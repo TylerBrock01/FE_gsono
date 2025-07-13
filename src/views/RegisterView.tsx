@@ -11,9 +11,9 @@ export default function RegisterView() {
 
             <form
                 onSubmit={handleSubmit(handleRegister)}
-                className=" bg-cyan-800 gap-2 py-2 border-black border-b-1 flex flex-col md:items-center"
+                className=" bg-cyan-800 gap-2 py-2 border-black border-b-1 flex flex-col items-center"
             >
-                <div className='bg-white rounded-2xl mt-2 mb-2 gap-2 p-2 px-4'>
+                <div className='bg-white rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
                     {/*name*/}
                     <div className="grid grid-cols-1 space-y-3">
                         {/*name*/}
