@@ -1,5 +1,3 @@
-import type {FieldError} from "react-hook-form";
-
 export default function ErrorMessage ({children}) {
     return(
         <div>
