@@ -1,9 +1,12 @@
 import {useForm} from 'react-hook-form'
+import ErrorMessage from "../components/ErrorMessage.tsx";
 
 export default function RegisterView() {
     const {register, handleSubmit, watch, formState: {errors}} = useForm();
+    // console.log(errors)
+
     const handleRegister = () => {
-        console.log('desde handle')
+        console.log('--------------------------\n\tdesde handle\n--------------------------')
     }
     return(
         <>
@@ -15,9 +18,10 @@ export default function RegisterView() {
             >
                 <div className='bg-white rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
                     {/*name*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='nameLabel' className="grid grid-cols-1 space-y-3">
                         {/*name*/}
-                        <label htmlFor="name" className="text-2xl capitalize">nombre de negocio</label>
+                        <label htmlFor="name" className="text-2xl capitalize">nombre de negocio
+                        </label>
                         <input
                             id="name"
                             type="text"
@@ -25,53 +29,63 @@ export default function RegisterView() {
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
                             {...register('name', {required: 'nombre es requerido'})}
                         />
-                    </div>
+                        {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
+
+                    </label>
                     {/*logo*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='logoLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL logo</label>
                         <input
                             id="logo"
                             type="url"
                             placeholder="Logo"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'logo es requerido'})}
+                            {...register('logo', {required: 'logo es requerido'})}
                         />
-                    </div>
+                        {errors.logo && <ErrorMessage>{errors.logo.message}</ErrorMessage>}
+
+                    </label>
                     {/*/!*location*!/*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='locationLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL ubicacion</label>
                         <input
                             id="location"
                             type="url"
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'ubicacion es requerido'})}
+                            {...register('location', {required: 'localizacion es requerido'})}
                         />
-                    </div>
+                        {errors.location && <ErrorMessage>{errors.location.message}</ErrorMessage>}
+
+                    </label>
                     {/*/!*social*!/*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='faceLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL facebook</label>
                         <input
                             id="face"
                             type="url"
                             placeholder="Facebook"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'facebook es requerido'})}
+                            {...register('face', {required: 'facebook es requerido'})}
                         />
-                    </div>
+                        {errors.face && <ErrorMessage>{errors.face.message}</ErrorMessage>}
+
+                    </label>
                     {/*/!*social 0*!/*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='instaLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL instagram</label>
                         <input
                             id="insta"
                             type="url"
                             placeholder="Instagram"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'instagram es requerido'})}
+                            {...register('insta', {required: 'instagram es requerido'})}
                         />
-                    </div>
+                        {errors.insta && <ErrorMessage>{errors.insta.message}</ErrorMessage>}
+
+                    </label>
                     {/*/!*description*!/*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <label id='descriptionLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="description" className="text-2xl  capitalize"> descripcion</label>
                         <textarea
                             id="description"
@@ -80,24 +94,28 @@ export default function RegisterView() {
                             maxLength={500}
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'ubicacion es requerido'})}
+                            {...register('description', {required: 'descripcion es requerido'})}
                         />
-                    </div>
+                        {errors.description && <ErrorMessage>{errors.description.message}</ErrorMessage>}
+
+                    </label>
                     {/*chain*/}
-                    <div className="grid grid-cols-1 space-y-3">
+                    <div id='chainDiv' className="grid grid-cols-1 space-y-3">
                         <label htmlFor={"chain"} className="  capitalize">Tipo:</label>
-                        <select className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
-                                {...register('chain', {required: 'tipo'})} >
-                            <option value="default" disabled={true} selected={true}>seleccione</option>
-                            <option value="gastronomia">gastronomia</option>
-                            <option value="compras">compras</option>
-                            <option value="experiencia">experiencia</option>
-                            <option value="servicio">servicio</option>
+                        <select id='chain' className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
+                                {...register('chain', {required: 'tipo es requerido'})} >
+                            <option id='' value="default" disabled={true} selected={true}>seleccione</option>
+                            <option id='gastronomia' value="gastronomia">gastronomia</option>
+                            <option id='compras' value="compras">compras</option>
+                            <option id='experiencia' value="experiencia">experiencia</option>
+                            <option id='servicio' value="servicio">servicio</option>
                         </select>
+                        {errors.chain && <ErrorMessage>{errors.chain.message}</ErrorMessage>}
                     </div>
                     {/*enviar*/}
                     <div className="flex justify-center m-4">
                         <input
+                            id="submit"
                             type="submit"
                             className=" bg-cyan-400 p-3 text-lg uppercase text-slate-600 rounded-lg font-bold cursor-pointer "
                             value='Crear Cuenta'
