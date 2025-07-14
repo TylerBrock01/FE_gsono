@@ -2,7 +2,7 @@ import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
 
 export default function RegisterView() {
-    const {register, handleSubmit, watch, formState: {errors}} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
     // console.log(errors)
 
     const handleRegister = () => {
@@ -27,23 +27,22 @@ export default function RegisterView() {
                             type="text"
                             placeholder="Negocio"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('name', {required: 'nombre es requerido'})}
+                            {...register('name', {required: 'nombre requerido'})}
                         />
                         {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
 
                     </label>
                     {/*logo*/}
                     <label id='logoLabel' className="grid grid-cols-1 space-y-3">
-                        <label htmlFor="name" className="text-2xl  capitalize">URL logo</label>
+                        <label htmlFor="logo" className="text-2xl  capitalize">URL logo</label>
                         <input
                             id="logo"
-                            type="url"
+                            type="text"
                             placeholder="Logo"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('logo', {required: 'logo es requerido'})}
+                            {...register('logo', {required: 'logo requerido'})}
                         />
                         {errors.logo && <ErrorMessage>{errors.logo.message}</ErrorMessage>}
-
                     </label>
                     {/*/!*location*!/*/}
                     <label id='locationLabel' className="grid grid-cols-1 space-y-3">
@@ -53,7 +52,7 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('location', {required: 'localizacion es requerido'})}
+                            {...register('location', {required: 'localizacion requerido'})}
                         />
                         {errors.location && <ErrorMessage>{errors.location.message}</ErrorMessage>}
 
@@ -66,7 +65,7 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Facebook"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('face', {required: 'facebook es requerido'})}
+                            {...register('face', {required: 'facebook requerido'})}
                         />
                         {errors.face && <ErrorMessage>{errors.face.message}</ErrorMessage>}
 
@@ -79,7 +78,7 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Instagram"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('insta', {required: 'instagram es requerido'})}
+                            {...register('insta', {required: 'instagram requerido'})}
                         />
                         {errors.insta && <ErrorMessage>{errors.insta.message}</ErrorMessage>}
 
@@ -94,7 +93,7 @@ export default function RegisterView() {
                             maxLength={500}
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('description', {required: 'descripcion es requerido'})}
+                            {...register('description', {required: 'descripcion requerido'})}
                         />
                         {errors.description && <ErrorMessage>{errors.description.message}</ErrorMessage>}
 
@@ -103,7 +102,7 @@ export default function RegisterView() {
                     <div id='chainDiv' className="grid grid-cols-1 space-y-3">
                         <label htmlFor={"chain"} className="  capitalize">Tipo:</label>
                         <select id='chain' className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
-                                {...register('chain', {required: 'tipo es requerido'})} >
+                                {...register('chain', {required: 'tipo requerido'})} >
                             <option id='' value="default" disabled={true} selected={true}>seleccione</option>
                             <option id='gastronomia' value="gastronomia">gastronomia</option>
                             <option id='compras' value="compras">compras</option>
