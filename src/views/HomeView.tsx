@@ -14,8 +14,8 @@ export default function HomeView() {
 
     return(
         <>
-            <nav className='grid md:justify-center lg:flex p-1'>
-                <ul className='grid grid-cols-2 gap-2 md:flex italic '>
+            <nav className='grid p-1'>
+                <ul className='grid grid-cols-2 md:flex md:justify-evenly lg:justify-center gap-2 italic '>
                     {categories.map((category) => ( // Itera sobre el array de categorías
                         <li key={category.id}>
                             <NavLink
@@ -29,7 +29,6 @@ export default function HomeView() {
                     ))}
                 </ul>
             </nav>
-
             {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
