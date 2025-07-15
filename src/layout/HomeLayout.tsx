@@ -1,5 +1,6 @@
 import {Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
+import { MapPin } from 'lucide-react';
 
 export default function HomeLayout() {
     return (
@@ -13,14 +14,9 @@ export default function HomeLayout() {
                         <h1 className=' text-4xl  italic capitalize font-semibold'>vive guaymas</h1>
                         <h2 className='italic p-1 flex-col justify-center text-2xl underline'>Tu guía esencial para encontrar lo mejor. </h2>
                         <div className="row-start-1 md:row-start-3 flex">
-                            <Link className='p-1 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/register">
+                            <Link className='p-1 py-2 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/register">
                                 <h2>Guaymas, Sonora, Mexico</h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
-                                </svg>
+                                <MapPin></MapPin>
                             </Link>
                         </div>
                     </div>
