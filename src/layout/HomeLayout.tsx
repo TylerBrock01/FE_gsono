@@ -9,12 +9,12 @@ export default function HomeLayout() {
             <title>vive guaymas</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
             <div className=' min-h-screen'>
+                <Link to='/' className='bg-cyan-500 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
                 <header className=' bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
-                    <div className='lg:h-45 font-serif grid p-3 border-black border-b-1 z-1 bg-black/60 text-white'>
-                        <h1 className=' text-4xl  italic capitalize font-semibold'>vive guaymas</h1>
-                        <h2 className='italic p-1 flex-col justify-center text-2xl underline'>Tu guía esencial para encontrar lo mejor. </h2>
-                        <div className="row-start-1 md:row-start-3 flex">
-                            <Link className='p-1 py-2 rounded-full flex justify-center items-center gap-1 bg-cyan-500' to="/register">
+                    <div className='flex flex-col md:flex-row justify-between md:items-center lg:items-end h-40 md:h-45 font-serif p-1  z-1 bg-black/60 text-white'>
+                        <h2 className='italic p-1 text-2xl'>Tu guía esencial para encontrar lo mejor. </h2>
+                        <div className="flex justify-end">
+                            <Link className=' p-1 flex justify-center rounded-full gap-1 bg-cyan-500 text-white' to="/register">
                                 <h2>Guaymas, Sonora, Mexico</h2>
                                 <MapPin></MapPin>
                             </Link>
