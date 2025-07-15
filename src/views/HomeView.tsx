@@ -1,9 +1,35 @@
-import { Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import {Facebook, Store, Instagram, BadgeDollarSign, Map} from 'lucide-react'
 
 export default function HomeView() {
+    const categories = [
+        {name: 'gastronomia', icon: 'food-drink', id: 1, path:"/register"},
+        {name: 'compras', icon: 'shopping-bag', id:2, path:"/"},
+        {name: 'experiencia', icon: 'xd', id:3, path:"/" },
+        {name: 'servicios', icon: 'briefcase', id:4, path:"/"},
+        {name: 'eventos', icon: 'calendar', id: 5, path:"/"},
+        {name: 'noticias', icon: 'newspaper', id: 6, path:"/"},
+        {name: 'contacto', icon: 'phone', id: 7, path:"/"},
+    ]
+
     return(
         <>
+            <nav className='grid md:justify-center lg:flex p-1'>
+                <ul className='grid grid-cols-2 gap-2 md:flex italic '>
+                    {categories.map((category) => ( // Itera sobre el array de categorías
+                        <li key={category.id}>
+                            <NavLink
+                                to={category.path} // ¡Usa category.path, no Link.path!
+                                end={category.path === '/'} // ¡Usa category.path, no Link.path!
+                                className='flex justify-center capitalize rounded-md p-1 bg-cyan-500 text-white' // Usa la función de estilos
+                            >
+                                <span>{category.name}</span> {/* El texto del link */}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+
             {/*index*/}
             <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             <section className='text-white'>
