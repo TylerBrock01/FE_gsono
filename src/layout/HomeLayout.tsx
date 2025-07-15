@@ -1,8 +1,19 @@
-import {Outlet} from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
 import { MapPin } from 'lucide-react';
 
 export default function HomeLayout() {
+    const categories = [
+        {name: 'gastronomia', icon: 'food-drink', id: 1, path:"/register"},
+        {name: 'compras', icon: 'shopping-bag', id:2, path:"/"},
+        {name: 'experiencia', icon: 'xd', id:3, path:"/" },
+        {name: 'servicios', icon: 'briefcase', id:4, path:"/"},
+        {name: 'eventos', icon: 'calendar', id: 5, path:"/"},
+        {name: 'noticias', icon: 'newspaper', id: 6, path:"/"},
+        {name: 'contacto', icon: 'phone', id: 7, path:"/"},
+    ]
+    const categoryStyle = 'capitalize p-2 rounded-full bg-cyan-500'
+
     return (
         <>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,15 +33,22 @@ export default function HomeLayout() {
                     </div>
 
                 </header>
-                <section className=' bg-white p-1 border-black border-b-1 sm:grid md:flex md:justify-between pr-2 pl-2'>
+                <nav className=' bg-white p-1 py-2 border-black border-b-1 sm:grid md:flex md:justify-between pr-2 pl-2'>
                     <h1 className='font-serif text-cyan-600 flex justify-center items-center'>Encuentra tu proxima aventura en Guaymas!</h1>
-                    <nav className='flex italic md:justify-start gap-2 text-gray-100'>
-                        <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">gastronomia</Link>
-                        <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">compras</Link>
-                        <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">experiencia</Link>
-                        <Link className='capitalize p-1 rounded-full bg-cyan-500' to="/">servicios</Link>
-                    </nav>
-                </section>
+                    <ul className='flex italic md:justify-start gap-2 text-gray-100 p-1'>
+                        {categories.map((category) => ( // Itera sobre el array de categorías
+                            <li key={category.id}>
+                                <NavLink
+                                    to={category.path} // ¡Usa category.path, no Link.path!
+                                    end={category.path === '/'} // ¡Usa category.path, no Link.path!
+                                    className={categoryStyle} // Usa la función de estilos
+                                >
+                                    <span>{category.name}</span> {/* El texto del link */}
+                                </NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
                 <div>
                     <Outlet/>
                 </div>
