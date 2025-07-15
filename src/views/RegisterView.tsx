@@ -2,8 +2,17 @@ import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
 
 export default function RegisterView() {
-    const {register, handleSubmit, formState: {errors}} = useForm();
     // console.log(errors)
+    const intialValues = {
+        name: '',
+        logo: '',
+        location: '',
+        face: '',
+        insta: '',
+        description: '',
+        chain: 'default',
+    }
+    const {register, handleSubmit, formState: {errors}} = useForm({defaultValues: intialValues});
 
     const handleRegister = () => {
         console.log('--------------------------\n\tdesde handle\n--------------------------')
