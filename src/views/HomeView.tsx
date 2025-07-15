@@ -1,5 +1,5 @@
 import {Link, NavLink} from 'react-router-dom'
-import {Facebook, Store, Instagram, BadgeDollarSign, Map} from 'lucide-react'
+import {Store, BadgeDollarSign, Map} from 'lucide-react'
 
 export default function HomeView() {
     const categories = [
@@ -58,12 +58,12 @@ export default function HomeView() {
             </section>
             {/*main*/}
             <article className='border-b-5 text-white font-serif border-l-10 border-cyan-600 grid grid-cols-1 lg:grid-cols-2'>
-                {/*month bussines*/}
+                {/*month business*/}
                 <section className=''>
                     <h1 className='  text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Negocio del Mes!</h1>
                     {/*bussines article*/}
                     <article className=' bg-white text-black capitalize p-2 '>
-                        {/*bussines name*/}
+                        {/*Business name*/}
                         <h2 className=' text-3xl flex gap-2 pb-1'>
                             <Store className='w-10 h-8 '/>
                             Be a Man'
@@ -73,13 +73,13 @@ export default function HomeView() {
                                 {/*image bussines*/}
                                 <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
 
-                                {/*social link bussines*/}
+                                {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
-                                    <Facebook></Facebook>
+                                    
                                     be a man
                                 </Link>
                                 <Link className='bg-pink-400 py-1 flex text-white justify-center items-center gap-1' to='https://www.instagram.com/bostonbeaman?fbclid=IwY2xjawLaQEVleHRuA2FlbQIxMABicmlkETFXSzNTRU8wdVZBY013VDFUAR5qWVJMw--mDWpUBjkT98VXQ1vf4YowwwfpD-G5SMSeUDrOqFJDg64D_9FOaA_aem_675SJonfCvJCb2iNVmgbvw'>
-                                    <Instagram></Instagram>
+                                    
                                     be a man
                                 </Link>
                             </div>
@@ -104,11 +104,11 @@ export default function HomeView() {
                         </div>
                     </article>
                 </section>
-                {/*last bussines opened*/}
+                {/*last business opened*/}
                 <section className=''>
                     <h1 className='  text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Recien abiertos!</h1>
                     <article className=' bg-white text-black capitalize p-2 '>
-                        {/*bussines name*/}
+                        {/*Business name*/}
                         <h2 className=' text-3xl flex gap-2 pb-1'>
                             <Store className='w-10 h-8 '/>
                             Be a Man'
@@ -118,13 +118,13 @@ export default function HomeView() {
                                 {/*image bussines*/}
                                 <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
 
-                                {/*social link bussines*/}
+                                {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
-                                    <Facebook></Facebook>
+                                    
                                     be a man
                                 </Link>
                                 <Link className='bg-pink-400 py-1 flex text-white justify-center items-center gap-1' to='https://www.instagram.com/bostonbeaman?fbclid=IwY2xjawLaQEVleHRuA2FlbQIxMABicmlkETFXSzNTRU8wdVZBY013VDFUAR5qWVJMw--mDWpUBjkT98VXQ1vf4YowwwfpD-G5SMSeUDrOqFJDg64D_9FOaA_aem_675SJonfCvJCb2iNVmgbvw'>
-                                    <Instagram></Instagram>
+                                    
                                     be a man
                                 </Link>
                             </div>
@@ -154,11 +154,11 @@ export default function HomeView() {
             {/*hot*/}
             <h1 className='mt-1 capitalize text-5xl font-serif italic p-1 bg-white text-cyan-600 border-cyan-600 border-l-20  flex md:justify-center'>votados por la comunidad</h1>
             <article className='border-b-5 text-white font-serif border-l-10 border-cyan-600 grid grid-cols-1 lg:grid-cols-2'>
-                {/*hot bussines*/}
+                {/*hot business*/}
                 <section>
                     <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>populares</h1>
                     <article className=' bg-white text-black capitalize p-2 '>
-                        {/*bussines name*/}
+                        {/*Business name*/}
                         <h2 className=' text-3xl flex gap-2 pb-1'>
                             <Store className='w-10 h-8 '/>
                             Be a Man'
@@ -168,13 +168,13 @@ export default function HomeView() {
                                 {/*image bussines*/}
                                 <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
 
-                                {/*social link bussines*/}
+                                {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
-                                    <Facebook></Facebook>
+                                    
                                     be a man
                                 </Link>
                                 <Link className='bg-pink-400 py-1 flex text-white justify-center items-center gap-1' to='https://www.instagram.com/bostonbeaman?fbclid=IwY2xjawLaQEVleHRuA2FlbQIxMABicmlkETFXSzNTRU8wdVZBY013VDFUAR5qWVJMw--mDWpUBjkT98VXQ1vf4YowwwfpD-G5SMSeUDrOqFJDg64D_9FOaA_aem_675SJonfCvJCb2iNVmgbvw'>
-                                    <Instagram></Instagram>
+                                    
                                     be a man
                                 </Link>
                             </div>
@@ -204,7 +204,7 @@ export default function HomeView() {
                 <section>
                     <h1 className='capitalize text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>recomendado</h1>
                     <article className=' bg-white text-black capitalize p-2 '>
-                        {/*bussines name*/}
+                        {/*Business name*/}
                         <h2 className=' text-3xl flex gap-2 pb-1'>
                             <Store className='w-10 h-8 '/>
                             Be a Man'
@@ -214,13 +214,13 @@ export default function HomeView() {
                                 {/*image bussines*/}
                                 <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
 
-                                {/*social link bussines*/}
+                                {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
-                                    <Facebook></Facebook>
+                                    
                                     be a man
                                 </Link>
                                 <Link className='bg-pink-400 py-1 flex text-white justify-center items-center gap-1' to='https://www.instagram.com/bostonbeaman?fbclid=IwY2xjawLaQEVleHRuA2FlbQIxMABicmlkETFXSzNTRU8wdVZBY013VDFUAR5qWVJMw--mDWpUBjkT98VXQ1vf4YowwwfpD-G5SMSeUDrOqFJDg64D_9FOaA_aem_675SJonfCvJCb2iNVmgbvw'>
-                                    <Instagram></Instagram>
+                                    
                                     be a man
                                 </Link>
                             </div>
