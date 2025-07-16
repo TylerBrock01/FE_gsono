@@ -12,7 +12,8 @@ export default function RegisterView() {
         description: '',
         chain: 'default',
     }
-    const {register, handleSubmit, formState: {errors}} = useForm({defaultValues: intialValues});
+    const {register, handleSubmit/**watch**/, formState: {errors}} = useForm({defaultValues: intialValues});
+    // const url = watch('logo')
 
     const handleRegister = () => {
         console.log('--------------------------\n\tdesde handle\n--------------------------')
@@ -49,7 +50,18 @@ export default function RegisterView() {
                             type="text"
                             placeholder="Logo"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('logo', {required: 'logo requerido'})}
+                            {...register('logo', {
+                                required: 'logo requerido',
+                                minLength:{
+                                    value:20,
+                                    message: 'el link debe tener al menos caracteres'
+                                }
+                                // pattern: {
+                                //     value: /^(https?:\/\/)?(www\.)?(facebook\.com|fb\.com|fbcdn\.net|scontent\..*?\.fbcdn\.net)\/(.*?\/)?(photos|photo\.php|images|media|v|profilepic)\/.*?\.(jpg|jpeg|png|gif|webp)(\?.*)?$/,
+                                //     message: "URL de imagen de Facebook no válida",
+                                // },
+                                // validate : (value)=> value === url ||'url no valido'
+                            })}
                         />
                         {errors.logo && <ErrorMessage>{errors.logo.message}</ErrorMessage>}
                     </label>
@@ -61,7 +73,13 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('location', {required: 'localizacion requerido'})}
+                            {...register('location', {
+                                required: 'localizacion requerido',
+                                minLength:{
+                                    value:20,
+                                    message: 'el link debe tener al menos caracteres'
+                                }
+                            })}
                         />
                         {errors.location && <ErrorMessage>{errors.location.message}</ErrorMessage>}
 
@@ -74,7 +92,13 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Facebook"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('face', {required: 'facebook requerido'})}
+                            {...register('face', {
+                                required: 'facebook requerido',
+                                minLength:{
+                                    value:20,
+                                    message: 'el link debe tener al menos caracteres'
+                                }
+                            })}
                         />
                         {errors.face && <ErrorMessage>{errors.face.message}</ErrorMessage>}
 
@@ -87,7 +111,13 @@ export default function RegisterView() {
                             type="url"
                             placeholder="Instagram"
                             className="bg-slate-100 border-none p-3 rounded-lg  placeholder-slate-400"
-                            {...register('insta', {required: 'instagram requerido'})}
+                            {...register('insta', {
+                                required: 'instagram requerido',
+                                minLength:{
+                                    value:20,
+                                    message: 'el link debe tener al menos caracteres'
+                                }
+                            })}
                         />
                         {errors.insta && <ErrorMessage>{errors.insta.message}</ErrorMessage>}
 
@@ -102,7 +132,9 @@ export default function RegisterView() {
                             maxLength={500}
                             placeholder="Ubicacion"
                             className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                            {...register('description', {required: 'descripcion requerido'})}
+                            {...register('description', {
+                                required: 'descripcion requerido'
+                            })}
                         />
                         {errors.description && <ErrorMessage>{errors.description.message}</ErrorMessage>}
 
