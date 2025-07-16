@@ -23,9 +23,9 @@ export default function RegisterView() {
 
             <form
                 onSubmit={handleSubmit(handleRegister)}
-                className="animate-blurred-fade-in bg-black/70 gap-2 py-2 border-black border-b-1 flex flex-col items-center"
+                className="animate-blurred-fade-in  gap-2 py-2 border-black border-b-1 flex flex-col items-center"
             >
-                <div className='bg-cyan-600 text-white rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
+                <div className='bg-white  rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
                     {/*name*/}
                     <label id='nameLabel' className="grid grid-cols-1 space-y-3">
                         {/*name*/}

@@ -8,7 +8,7 @@ export default function HomeLayout() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>vive guaymas</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
-            <div className=' min-h-screen'>
+            <div className='bg-cyan-800 min-h-screen'>
                 <Link to='/' className='bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
                 <header className=' bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
                     <div className='flex flex-col md:flex-row justify-between md:items-center lg:items-end h-40 md:h-45 font-serif p-2  z-1 bg-black/60 text-white'>
