@@ -3,13 +3,13 @@ import {Store, BadgeDollarSign, Map} from 'lucide-react'
 
 export default function HomeView() {
     const categories = [
-        {name: 'gastronomia', icon: 'food-drink', id: 1, path:"/register"},
+        {name: 'gastronomia', icon: 'food-drink', id: 1, path:"/"},
         {name: 'compras', icon: 'shopping-bag', id:2, path:"/"},
         {name: 'experiencia', icon: 'xd', id:3, path:"/" },
         {name: 'servicios', icon: 'briefcase', id:4, path:"/"},
         {name: 'eventos', icon: 'calendar', id: 5, path:"/"},
         {name: 'noticias', icon: 'newspaper', id: 6, path:"/"},
-        {name: 'contacto', icon: 'phone', id: 7, path:"/"},
+        {name: 'contacto', icon: 'phone', id: 7, path:"/register"},
     ]
 
     return(
