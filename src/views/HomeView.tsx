@@ -14,7 +14,7 @@ export default function HomeView() {
 
     return(
         <>
-            <nav className='grid p-1'>
+            <nav className='animate-blurred-fade-in grid p-1'>
                 <ul className='grid grid-cols-2 md:flex md:justify-evenly lg:justify-center gap-2 italic '>
                     {categories.map((category) => ( // Itera sobre el array de categorías
                         <li key={category.id}>
@@ -30,10 +30,11 @@ export default function HomeView() {
                 </ul>
             </nav>
             {/*index*/}
-            <h1 className='bg-cyan-600 text-white flex justify-center p-1 border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
-            <section className='text-white'>
+            <h1 className='bg-cyan-600 text-white flex justify-center p-1 animate-blurred-fade-in border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
+            {/*hero*/}
+            <section className='text-white  animate-blurred-fade-in  '>
                 {/*photo bg*/}
-                <div className='bg-[url("/src/img/hero1.jpg")] bg-cover bg-no-repeat bg-right lg:bg-top-right'>
+                <div className='bg-[url("/src/img/hero1.jpg")]  bg-cover bg-no-repeat bg-right lg:bg-top-right'>
                     {/*content*/}
                     <div className='bg-black/50 p-3 flex flex-col justify-between md:justify-center gap-4 h-120 md:h-130 lg:h-screen'>
                         {/*title*/}
