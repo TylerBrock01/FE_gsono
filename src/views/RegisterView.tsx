@@ -86,7 +86,7 @@ export default function RegisterView() {
                             id="insta"
                             type="url"
                             placeholder="Instagram"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className="bg-slate-100 border-none p-3 rounded-lg  placeholder-slate-400"
                             {...register('insta', {required: 'instagram requerido'})}
                         />
                         {errors.insta && <ErrorMessage>{errors.insta.message}</ErrorMessage>}
@@ -109,8 +109,8 @@ export default function RegisterView() {
                     </label>
                     {/*chain*/}
                     <div id='chainDiv' className="grid grid-cols-1 space-y-3">
-                        <label htmlFor={"chain"} className="  capitalize">Tipo:</label>
-                        <select id='chain' className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
+                        <label htmlFor={"chain"} className=" text-2xl capitalize">Tipo:</label>
+                        <select id='chain' className="bg-slate-100 text-slate-400 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
                                 {...register('chain', {required: 'tipo requerido'})} >
                             <option id='' value="default" disabled={true} selected={true}>seleccione</option>
                             <option id='gastronomia' value="gastronomia">gastronomia</option>
