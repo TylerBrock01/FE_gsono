@@ -19,7 +19,7 @@ export default function RegisterView() {
     }
     return(
         <>
-            <h1 className="animate-blurred-fade-in flex justify-start md:justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
+            <h1 className="animate-slide-in-top flex justify-start md:justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
 
             <form
                 onSubmit={handleSubmit(handleRegister)}

@@ -9,7 +9,7 @@ export default function HomeLayout() {
             <title>vive guaymas</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
             <div className='bg-cyan-800 min-h-screen'>
-                <Link to='/' className=' bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
+                <Link to='/' className=' animate-slide-in-top bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
                 <header className='animate-blurred-fade-in bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
                     <div className='flex flex-col md:flex-row justify-between md:items-center lg:items-end h-40 md:h-45 font-serif p-2  z-1 bg-black/60 text-white'>
                         <h2 className='italic p-1 text-2xl'>Tu guía esencial para encontrar lo mejor. </h2>
