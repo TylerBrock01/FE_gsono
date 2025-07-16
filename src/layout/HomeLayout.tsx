@@ -9,12 +9,12 @@ export default function HomeLayout() {
             <title>vive guaymas</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
             <div className='bg-cyan-800 min-h-screen'>
-                <Link to='/' className='bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
-                <header className=' bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
+                <Link to='/' className=' bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
+                <header className='animate-blurred-fade-in bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
                     <div className='flex flex-col md:flex-row justify-between md:items-center lg:items-end h-40 md:h-45 font-serif p-2  z-1 bg-black/60 text-white'>
                         <h2 className='italic p-1 text-2xl'>Tu guía esencial para encontrar lo mejor. </h2>
                         <div className="flex justify-end">
-                            <Link className=' p-1 flex justify-center rounded-full gap-1 bg-cyan-500 text-white' to="/register">
+                            <Link className=' p-1 flex justify-center rounded-full gap-1 bg-cyan-500 text-white' to="#">
                                 <h2>Guaymas, Sonora, Mexico</h2>
                                 <MapPin></MapPin>
                             </Link>
@@ -22,7 +22,7 @@ export default function HomeLayout() {
                     </div>
 
                 </header>
-                <h1 className='font-serif bg-cyan-500 text-white flex justify-center p-1'>Encuentra tu proxima aventura en Guaymas!</h1>
+                <h1 className='animate-blurred-fade-in font-serif bg-cyan-500 text-white flex justify-center p-1'>Encuentra tu proxima aventura en Guaymas!</h1>
                 <div>
                     <Outlet/>
                 </div>
