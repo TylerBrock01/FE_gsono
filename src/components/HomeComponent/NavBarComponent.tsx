@@ -14,13 +14,13 @@ export default function NavBarComponent() {
 
 
     const categories = [
-        {name: 'gastronomia', icon: GlobeAmericasIcon , id: 1, path:"/"},
-        {name: 'compras', icon: ShoppingBagIcon, id:2, path:"/"},
-        {name: 'experiencia', icon:PhotoIcon, id:3, path:"/" },
-        {name: 'servicios', icon: BriefcaseIcon, id:4, path:"/"},
-        {name: 'eventos', icon: CalendarIcon, id: 5, path:"/"},
-        {name: 'noticias', icon: NewspaperIcon, id: 6, path:"/"},
-        {name: 'contacto', icon: PhoneIcon, id: 7, path:"/register"}
+        {name: 'gastronomia', icon: GlobeAmericasIcon , id: 'navGastronomy', path:"/"},
+        {name: 'compras', icon: ShoppingBagIcon, id:'navSales', path:"/"},
+        {name: 'experiencia', icon:PhotoIcon, id:'navExperience', path:"/" },
+        {name: 'servicios', icon: BriefcaseIcon, id:'navService', path:"/"},
+        {name: 'eventos', icon: CalendarIcon, id: 'navShows', path:"/"},
+        {name: 'noticias', icon: NewspaperIcon, id: 'navNews', path:"/"},
+        {name: 'contacto', icon: PhoneIcon, id: 'navContact', path:"/register"}
     ]
     return(
         <Popover className='flex items-center'>
@@ -30,11 +30,11 @@ export default function NavBarComponent() {
 
             <PopoverPanel
                 anchor="bottom end"
-                className="animate-slide-in-right grid md:flex gap-1 mt-3 focus:outline-0 capitalize rounded-xl bg-cyan-200/60 p-1 text-sm/6 text-white  "
+                className="animate-slide-in-right md:animate-slide-out-bottom grid md:flex gap-1 mt-3 md:mt-0 focus:outline-0 capitalize rounded-xl bg-cyan-200/60 p-1 text-sm/6 text-white  "
             >
 
                 {categories.map((category) => (
-                    <Link to={category.path} className=" bg-cyan-500 flex justify-between md:justify-center gap-1 px-15 md:px-0  rounded-lg  py-4 border-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
+                    <Link id={category.id} to={category.path} className=" bg-cyan-500 flex justify-between md:justify-center gap-1 px-15 md:px-2  rounded-lg  py-4 border-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
 
                         <category.icon className='h-6 w-6'  />
                         <p className='mr-5'>{category.name}</p>
