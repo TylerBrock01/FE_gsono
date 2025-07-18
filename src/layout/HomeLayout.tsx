@@ -1,6 +1,7 @@
 import {Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
 import NavBarComponent from "../components/HomeComponent/NavBarComponent.tsx";
+import {scrollToTop} from "../components/MiscComponent/ScrollTop.ts";
 
 export default function HomeLayout() {
     return (
@@ -10,8 +11,8 @@ export default function HomeLayout() {
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
 
             <div className=' bg-cyan-800 min-h-screen '>
-                <div className='sticky z-5 border-1 border-cyan-300 top-0 right-0 left-0 bg-cyan-600 animate-slide-in-top flex justify-between p-1'>
-                    <Link to='/' className=' font-serif text-white  flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>
+                <div onClick={scrollToTop} className='sticky z-5 border-1 border-cyan-300 top-0 right-0 left-0 bg-cyan-600 animate-slide-in-top flex justify-between p-1'>
+                    <Link  to='/' className=' font-serif text-white  flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>
                         vive guaymas
                     </Link>
                     <NavBarComponent/>
