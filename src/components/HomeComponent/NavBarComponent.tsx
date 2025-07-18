@@ -16,23 +16,22 @@ export default function NavBarComponent() {
     return(
         <nav className='flex ' >
             <Menu>
-                <MenuButton className="capitalize  items-center gap-2 rounded-md bg-cyan-500 data-open:bg-cyan-800 px-3 py-1 text-sm/6 font-semibold text-white">
+                <MenuButton className="capitalize focus:outline-0   gap-2 rounded-md bg-cyan-700  border-1 border-cyan-800 hover:border-cyan-400 px-3 py-1 text-sm/6 font-semibold text-white">
                     <Bars3Icon className='h-6 w-6' aria-hidden='true'/>
                 </MenuButton>
 
                 <MenuItems
-                    transition
                     anchor="bottom end"
-                    className="capitalize animate-blurred-fade-in origin-top-right rounded-xl border border-white  p-1 text-sm/6 text-white  "
+                    className="animate-slide-in-right grid gap-1 z-5 mt-2 focus:outline-0 capitalize  rounded-xl bg-cyan-800   p-1 text-sm/6 text-white  "
                 >
                     <MenuItem>
-                        <Link to='#' className="bg-cyan-500 group flex w-full items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10">
-                            xd
+                        <Link to='#' className="bg-cyan-500 group flex  items-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-600">
+                            gastronomic
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link to='#' className="bg-cyan-500 group flex w-full items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10">
-                            xd
+                        <Link to='#' className="bg-cyan-500 group flex  items-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-600">
+                            services
                         </Link>
                     </MenuItem>
                 </MenuItems>
