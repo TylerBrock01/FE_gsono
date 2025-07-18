@@ -26,15 +26,15 @@ export default function NavBarComponent() {
                 <MenuItems
 
                     anchor="bottom end"
-                    className="animate-slide-in-right grid gap-1 z-5 mt-2 focus:outline-0 capitalize  rounded-xl bg-cyan-800   p-1 text-sm/6 text-white  "
+                    className="animate-slide-in-right grid gap-1 z-5 mt-2 w-70 focus:outline-0 capitalize  rounded-xl bg-cyan-200   p-1 text-sm/6 text-white  "
                 >
                     <MenuItem>
-                        <Link to='/register' className="bg-cyan-500 group flex  items-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-600">
-                            gastronomic
+                        <Link to='/register' className="bg-cyan-500 group flex  justify-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
+                            gastronomy
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link to='#' className="bg-cyan-500 group flex  items-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-600">
+                        <Link to='#' className="bg-cyan-500 group flex  justify-center gap-2 rounded-lg px-3 py-1 border-1 border-cyan-800 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
                             services
                         </Link>
                     </MenuItem>
