@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {scrollToTop} from "../MiscComponent/ScrollTop.ts";
 
 
-export function NavBarComponent() {
+export default function NavBarComponent() {
 
 
     // const categories = [
