@@ -1,14 +1,10 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import {Link} from "react-router-dom";
-const scrollToTop = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-};
+import {scrollToTop} from "../MiscComponent/ScrollTop.ts";
 
-export default function NavBarComponent() {
+
+export function NavBarComponent() {
 
 
     // const categories = [
