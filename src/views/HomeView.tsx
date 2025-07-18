@@ -1,61 +1,19 @@
-import {Link, NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {Store, BadgeDollarSign, Map} from 'lucide-react'
+import NavBarComponent from "../components/HomeComponent/NavBarComponent.tsx";
+import HeroComponent from "../components/HomeComponent/HeroComponent.tsx";
 
 export default function HomeView() {
-    const categories = [
-        {name: 'gastronomia', icon: 'food-drink', id: 1, path:"/"},
-        {name: 'compras', icon: 'shopping-bag', id:2, path:"/"},
-        {name: 'experiencia', icon: 'xd', id:3, path:"/" },
-        {name: 'servicios', icon: 'briefcase', id:4, path:"/"},
-        {name: 'eventos', icon: 'calendar', id: 5, path:"/"},
-        {name: 'noticias', icon: 'newspaper', id: 6, path:"/"},
-        {name: 'contacto', icon: 'phone', id: 7, path:"/register"},
-    ]
+
 
     return(
         <>
-            <nav className=' animate-blurred-fade-in bg-white grid p-1'>
-                <ul className='grid grid-cols-2 md:flex md:justify-evenly lg:justify-center gap-2 italic '>
-                    {categories.map((category) => ( // Itera sobre el array de categorías
-                        <li key={category.id}>
-                            <NavLink
-                                to={category.path} // ¡Usa category.path, no Link.path!
-                                end={category.path === '/'} // ¡Usa category.path, no Link.path!
-                                className='flex justify-center capitalize rounded-md p-1 bg-cyan-500 text-white' // Usa la función de estilos
-                            >
-                                <span>{category.name}</span> {/* El texto del link */}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            {/*navbar*/}
+            <NavBarComponent/>
             {/*index*/}
             <h1 className='animate-blurred-fade-in bg-cyan-600 text-white flex justify-center p-1  border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             {/*hero*/}
-            <section className='text-white  animate-blurred-fade-in  '>
-                {/*photo bg*/}
-                <div className='bg-[url("/src/img/hero1.jpg")]  bg-cover bg-no-repeat bg-right lg:bg-top-right'>
-                    {/*content*/}
-                    <div className='bg-black/50 p-3 flex flex-col justify-between md:justify-center gap-4 h-120 md:h-130 lg:h-screen'>
-                        {/*title*/}
-                        <div className='grid'>
-                            <h1 className=' capitalize text-6xl decoration-cyan-600 decoration-3 underline-offset-8 underline font-serif'>
-                                bienvenido a guaymas
-                            </h1>
-                            <h2 className='text-3xl'>El puerto de la experiencia</h2>
-                        </div>
-                        {/*articles*/}
-                        <div className=' bg-cyan-600/50 p-2'>
-                            <article className='gap-2'>
-                                <Link to="/" className=' text-xl capitalize underline'>proximos eventos!</Link>
-                                <p className='font-serif text-sm/6'>
-                                    Cras pharetra tempus imperdiet. Aenean at varius elit. Vestibulum tincidunt sapien eu turpis ornare, vitae efficitur nunc euismod. Aenean posuere ipsum orci. Vivamus consectetur mollis nulla, eu vehicula mi feugiat in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <HeroComponent/>
             {/*main*/}
             <article className='border-b-5 text-white font-serif border-l-10 border-cyan-600 grid grid-cols-1 lg:grid-cols-2'>
                 {/*month business*/}
