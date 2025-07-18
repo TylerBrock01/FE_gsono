@@ -1,5 +1,6 @@
 import {Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
+import NavBarComponent from "../components/HomeComponent/NavBarComponent.tsx";
 
 export default function HomeLayout() {
     return (
@@ -7,8 +8,14 @@ export default function HomeLayout() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>vive guaymas</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
-            <div className='bg-cyan-800 min-h-screen'>
-                <Link to='/' className=' animate-slide-in-top bg-cyan-600 font-serif text-white p-1 flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>vive guaymas</Link>
+            <div className=' bg-cyan-600 animate-slide-in-top flex justify-between p-1'>
+                <Link to='/' className=' font-serif text-white  flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3'>
+                    vive guaymas
+                </Link>
+                <NavBarComponent/>
+            </div>
+            <div className='bg-cyan-800 min-h-screen '>
+
                 <header className='animate-blurred-fade-in bg-[url("/src/img/hero.jpg")] bg-cover bg-no-repeat md:bg-right lg:bg-center'>
                     <div className='flex flex-col md:flex-row justify-between md:items-center lg:items-end h-40 md:h-45 font-serif p-2  z-1 bg-black/60 text-white'>
                         <h2 className='italic p-1 text-2xl'>Tu guía esencial para encontrar lo mejor. </h2>

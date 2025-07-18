@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom'
-import NavBarComponent from "../components/HomeComponent/NavBarComponent.tsx";
 import HeroComponent from "../components/HomeComponent/HeroComponent.tsx";
 
 export default function HomeView() {
@@ -8,9 +7,8 @@ export default function HomeView() {
     return(
         <>
             {/*navbar*/}
-            <NavBarComponent/>
             {/*index*/}
-            <h1 className='animate-blurred-fade-in bg-cyan-600 text-white flex justify-center p-1  border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
+            <h1 className='animate-blurred-fade-in bg-cyan-600 text-white flex justify-between p-1  border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
             {/*hero*/}
             <HeroComponent/>
             {/*main*/}
