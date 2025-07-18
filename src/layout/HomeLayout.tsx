@@ -1,6 +1,5 @@
 import {Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
-import { MapPin } from 'lucide-react';
 
 export default function HomeLayout() {
     return (
@@ -16,7 +15,6 @@ export default function HomeLayout() {
                         <div className="flex justify-end">
                             <Link className=' p-1 flex justify-center rounded-full gap-1 bg-cyan-500 text-white' to="#">
                                 <h2>Guaymas, Sonora, Mexico</h2>
-                                <MapPin></MapPin>
                             </Link>
                         </div>
                     </div>
