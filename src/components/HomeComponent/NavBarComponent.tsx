@@ -31,11 +31,11 @@ export default function NavBarComponent() {
 
                 <PopoverPanel
                     anchor="bottom end"
-                    className="animate-slide-in-right grid gap-1 z-5 mt-2 w-70 focus:outline-0 capitalize  rounded-xl bg-cyan-200   p-1 text-sm/6 text-white  "
+                    className="animate-slide-in-right grid gap-1 z-5 mt-2 w-70 focus:outline-0 capitalize rounded-xl bg-cyan-200/60 p-1 text-sm/6 text-white  "
                 >
 
                     {categories.map((category) => (
-                        <label className="bg-cyan-500 flex  justify-between gap-2 rounded-lg  py-1 border-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
+                        <label className="bg-cyan-500 flex  justify-between gap-2 rounded-lg  py-4 border-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
                             {/*<Bars3Icon className='h-6 w-6'/>*/}
                             <category.icon className='h-6 w-6 ml-5'   />
                             <p>{category.name}</p>
