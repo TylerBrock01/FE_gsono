@@ -23,8 +23,8 @@ export default function NavBarComponent() {
         {name: 'contacto', icon: PhoneIcon, id: 'navContact', path:"/register"}
     ]
     return(
-        <Popover className='flex items-center'>
-            <PopoverButton onClick={scrollToTop} className="capitalize focus:outline-0  gap-2 rounded-md bg-cyan-700  border-1 border-cyan-800 hover:border-cyan-400 px-3 py-1 text-sm/6 font-semibold text-white">
+        <Popover className='flex items-center p-1'>
+            <PopoverButton onClick={scrollToTop} className="capitalize focus:outline-0  gap-2 rounded-md bg-cyan-500 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400 px-3 py-1 text-sm/6 font-semibold text-white">
                 <Bars3Icon className='h-7 w-7' aria-hidden='true'/>
             </PopoverButton>
 
@@ -34,7 +34,7 @@ export default function NavBarComponent() {
             >
 
                 {categories.map((category) => (
-                    <Link id={category.id} to={category.path} className=" bg-cyan-500 flex justify-between md:justify-center gap-1 px-15 md:px-2  rounded-lg  py-4 border-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
+                    <Link id={category.id} to={category.path} className="  flex justify-between md:justify-center gap-1 px-15 md:px-2  rounded-lg  py-4 border-1 bg-cyan-500 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400">
 
                         <category.icon className='h-6 w-6'  />
                         <p className='mr-5'>{category.name}</p>
