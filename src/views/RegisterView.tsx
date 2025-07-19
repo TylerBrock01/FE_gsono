@@ -1,5 +1,6 @@
 import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
+import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
 
 export default function RegisterView() {
     // console.log(errors)
@@ -20,7 +21,7 @@ export default function RegisterView() {
     }
     return(
         <>
-            <h1 className="animate-slide-in-top flex justify-start md:justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
+            <h1 className="animate-slide-in-top flex justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
 
             <form
                 onSubmit={handleSubmit(handleRegister)}
@@ -157,7 +158,7 @@ export default function RegisterView() {
                         <input
                             id="submit"
                             type="submit"
-                            className=" bg-cyan-400 p-3 text-lg uppercase text-slate-600 rounded-lg font-bold cursor-pointer "
+                            className={"p-3 text-lg uppercase  rounded-lg font-bold cursor-pointer border-1 "+ButtonStyle}
                             value='Crear Cuenta'
                         />
                     </div>
