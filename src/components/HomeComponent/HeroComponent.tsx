@@ -10,9 +10,9 @@ export default function HeroComponent() {
                     {/*title*/}
                     <div className='grid'>
                         <h1 className=' capitalize text-6xl decoration-cyan-600 decoration-3 underline-offset-8 underline font-serif'>
-                            bienvenido a guaymas
+                            viva turismo
                         </h1>
-                        <h2 className='text-3xl'>El puerto de la experiencia</h2>
+                        <h2 className='text-3xl'>Vive la experiencia</h2>
                     </div>
                     {/*articles*/}
                     <div className=' bg-cyan-600/50 p-2'>
