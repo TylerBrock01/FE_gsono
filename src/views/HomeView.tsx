@@ -8,7 +8,7 @@ export default function HomeView() {
         <>
             {/*navbar*/}
             {/*index*/}
-            <h1 className='animate-blurred-fade-in bg-cyan-600 text-white flex justify-between p-1  border-black border-b-1'>Explora Guaymas: Descubre el Corazón de Nuestros Negocios Locales</h1>
+            <h1 className='animate-blurred-fade-in bg-cyan-700 text-white flex justify-between p-1  border-black border-b-1 '>Descubre nuevas experiencias en tu viaje.</h1>
             {/*hero*/}
             <HeroComponent/>
             {/*main*/}
