@@ -16,11 +16,11 @@ export default function NavBarComponent() {
 
     const categories = [
         {name: 'gastronomia', icon: GlobeAmericasIcon , id: 'navGastronomy', path:"/"},
-        {name: 'compras', icon: ShoppingBagIcon, id:'navSales', path:"/"},
-        {name: 'experiencia', icon:PhotoIcon, id:'navExperience', path:"/" },
-        {name: 'servicios', icon: BriefcaseIcon, id:'navService', path:"/"},
-        {name: 'eventos', icon: CalendarIcon, id: 'navShows', path:"/"},
-        {name: 'noticias', icon: NewspaperIcon, id: 'navNews', path:"/"},
+        {name: 'compras', icon: ShoppingBagIcon, id:'navSales', path:"#"},
+        {name: 'experiencia', icon:PhotoIcon, id:'navExperience', path:"#" },
+        {name: 'servicios', icon: BriefcaseIcon, id:'navService', path:"#"},
+        {name: 'eventos', icon: CalendarIcon, id: 'navShows', path:"#"},
+        {name: 'noticias', icon: NewspaperIcon, id: 'navNews', path:"#"},
         {name: 'contacto', icon: PhoneIcon, id: 'navContact', path:"/register"}
     ]
     return(
