@@ -13,9 +13,9 @@ export default function RegisterView() {
         description: '',
         chain: 'default',
     }
-    const {register, handleSubmit/**watch**/, formState: {errors}} = useForm({defaultValues: intialValues});
-    // const url = watch('logo')
-
+    const {register, handleSubmit,watch, formState: {errors}} = useForm({defaultValues: intialValues});
+    const chain = watch('chain')
+    console.log(chain)
     const handleRegister = () => {
         console.log('--------------------------\n\tdesde handle\n--------------------------')
     }
@@ -144,7 +144,13 @@ export default function RegisterView() {
                     <div id='chainDiv' className="grid grid-cols-1 space-y-3">
                         <label htmlFor={"chain"} className=" text-2xl capitalize">Tipo:</label>
                         <select id='chain' className="bg-slate-100 text-slate-400 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
-                                {...register('chain', {required: 'tipo requerido'})} >
+                                {...register(
+                                    'chain',
+                                    {required: 'tipo requerido',
+                                        validate: (value) => value !== 'default' || 'seleccione un tipo'
+                                    }
+                                    )
+                        } >
                             <option id='' value="default" disabled={true} selected={true}>seleccione</option>
                             <option id='gastronomia' value="gastronomia">gastronomia</option>
                             <option id='compras' value="compras">compras</option>
