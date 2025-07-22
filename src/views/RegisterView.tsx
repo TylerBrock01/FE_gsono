@@ -1,6 +1,13 @@
 import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
 import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
+import {inputTextStyle} from "../components/MiscComponent/InputTextStyle.ts";
+
+function addBussinestittle(){
+    return(
+        <h1 className="animate-slide-in-top flex justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
+    )
+}
 
 export default function RegisterView() {
     // console.log(errors)
@@ -13,16 +20,15 @@ export default function RegisterView() {
         description: '',
         chain: 'default',
     }
-    const {register, handleSubmit,watch, formState: {errors}} = useForm({defaultValues: intialValues});
-    const chain = watch('chain')
-    console.log(chain)
+    const {register, handleSubmit,/**watch,**/ formState: {errors}} = useForm({defaultValues: intialValues});
+    // const chain = watch('chain')
+    // console.log(chain)
     const handleRegister = () => {
         console.log('--------------------------\n\tdesde handle\n--------------------------')
     }
     return(
         <>
-            <h1 className="animate-slide-in-top flex justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
-
+            {addBussinestittle()}
             <form
                 onSubmit={handleSubmit(handleRegister)}
                 className="animate-blurred-fade-in  gap-2 py-2 border-black border-b-1 flex flex-col items-center"
@@ -37,7 +43,7 @@ export default function RegisterView() {
                             id="name"
                             type="text"
                             placeholder="Negocio"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('name', {required: 'nombre requerido'})}
                         />
                         {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
@@ -50,7 +56,7 @@ export default function RegisterView() {
                             id="logo"
                             type="text"
                             placeholder="Logo"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('logo', {
                                 required: 'logo requerido',
                                 minLength:{
@@ -73,7 +79,7 @@ export default function RegisterView() {
                             id="location"
                             type="url"
                             placeholder="Ubicacion"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('location', {
                                 required: 'localizacion requerido',
                                 minLength:{
@@ -92,7 +98,7 @@ export default function RegisterView() {
                             id="face"
                             type="url"
                             placeholder="Facebook"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('face', {
                                 required: 'facebook requerido',
                                 minLength:{
@@ -111,7 +117,7 @@ export default function RegisterView() {
                             id="insta"
                             type="url"
                             placeholder="Instagram"
-                            className="bg-slate-100 border-none p-3 rounded-lg  placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('insta', {
                                 required: 'instagram requerido',
                                 minLength:{
@@ -132,7 +138,7 @@ export default function RegisterView() {
                             rows={4}
                             maxLength={500}
                             placeholder="Ubicacion"
-                            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                            className={inputTextStyle}
                             {...register('description', {
                                 required: 'descripcion requerido'
                             })}
@@ -141,9 +147,10 @@ export default function RegisterView() {
 
                     </label>
                     {/*chain*/}
-                    <div id='chainDiv' className="grid grid-cols-1 space-y-3">
-                        <label htmlFor={"chain"} className=" text-2xl capitalize">Tipo:</label>
-                        <select id='chain' className="bg-slate-100 text-slate-400 border-none p-3 rounded-lg placeholder-slate-400 capitalize"
+                    <div id='chainDiv' className="grid grid-cols-1 space-y-3 capitalize">
+                        <label htmlFor={"chain"} className=" text-2xl">Tipo:</label>
+                        <select id='chain'
+                                className={inputTextStyle}
                                 {...register(
                                     'chain',
                                     {required: 'tipo requerido',
@@ -151,11 +158,11 @@ export default function RegisterView() {
                                     }
                                     )
                         } >
-                            <option id='' value="default" disabled={true} selected={true}>seleccione</option>
-                            <option id='gastronomia' value="gastronomia">gastronomia</option>
-                            <option id='compras' value="compras">compras</option>
-                            <option id='experiencia' value="experiencia">experiencia</option>
-                            <option id='servicio' value="servicio">servicio</option>
+                            <option id='' value="default" disabled={true} selected={true}>Seleccione</option>
+                            <option id='gastronomia' value="gastronomia">Gastronomia</option>
+                            <option id='compras' value="compras">Compras</option>
+                            <option id='experiencia' value="experiencia">Experiencia</option>
+                            <option id='servicio' value="servicio">Servicio</option>
                         </select>
                         {errors.chain && <ErrorMessage>{errors.chain.message}</ErrorMessage>}
                     </div>
