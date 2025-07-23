@@ -2,6 +2,7 @@ import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
 import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
 import {inputTextStyle} from "../components/MiscComponent/InputTextStyle.ts";
+import type {Bussines} from "../typesModel/Bussines.ts";
 
 function addBussinestittle(){
     return(
@@ -20,11 +21,12 @@ export default function RegisterView() {
         description: '',
         chain: 'default',
     }
-    const {register, handleSubmit,/**watch,**/ formState: {errors}} = useForm({defaultValues: intialValues});
+    const {register, handleSubmit,/**watch,**/ formState: {errors}} = useForm<Bussines>({defaultValues: intialValues});
     // const chain = watch('chain')
     // console.log(chain)
-    const handleRegister = () => {
+    const handleRegister = (formData: Bussines) => {
         console.log('--------------------------\n\tdesde handle\n--------------------------')
+        console.log(formData)
     }
     return(
         <>
@@ -166,7 +168,7 @@ export default function RegisterView() {
                         </select>
                         {errors.chain && <ErrorMessage>{errors.chain.message}</ErrorMessage>}
                     </div>
-                    {/*enviar*/}
+                    {/*sent*/}
                     <div className="flex justify-center m-4">
                         <input
                             id="submit"
