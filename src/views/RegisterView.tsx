@@ -3,7 +3,7 @@ import ErrorMessage from "../components/ErrorMessage.tsx";
 import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
 import {inputTextStyle} from "../components/MiscComponent/InputTextStyle.ts";
 import type {Bussines} from "../typesModel/Bussines.ts";
-import axios from "axios";
+import axios,{isAxiosError} from "axios";
 
 function addBussinestittle(){
     return(
@@ -27,11 +27,20 @@ export default function RegisterView() {
     // console.log(chain)
     const handleRegister = async (formData: Bussines) => {
         try{
-            const response = await axios.post('http://localhost:3000/auth/registerbussines', formData)
-            console.log(response)
-        }catch (e){
-            console.log(e)
-            console.log('cors')
+            const {data} = await axios.post('http://localhost:3000/auth/registerbussines', formData)
+            console.log(data)
+        }catch (error){
+            if(isAxiosError(error) && error.response){
+                console.log(error.response.data.error)
+                // if(e.response?.data.message){
+                //     alert(e.response?.data.message)
+                // }
+                // if(e.response?.data.errors){
+                //     for(const error in e.response?.data.errors){
+                //         alert(e.response?.data.errors[error])
+                //     }
+                // }
+            }
         }
     }
     return(
