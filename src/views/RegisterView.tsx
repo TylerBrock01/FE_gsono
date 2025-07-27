@@ -17,8 +17,8 @@ export default function RegisterView() {
         name: '',
         logo: '',
         location: '',
-        face: '',
-        insta: '',
+        social: '',
+        social0: '',
         description: '',
         chain: 'default',
     }
@@ -103,11 +103,11 @@ export default function RegisterView() {
                     <label id='faceLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL facebook</label>
                         <input
-                            id="face"
+                            id="social"
                             type="url"
                             placeholder="Facebook"
                             className={inputTextStyle}
-                            {...register('face', {
+                            {...register('social', {
                                 required: 'facebook requerido',
                                 minLength:{
                                     value:20,
@@ -122,11 +122,11 @@ export default function RegisterView() {
                     <label id='instaLabel' className="grid grid-cols-1 space-y-3">
                         <label htmlFor="name" className="text-2xl  capitalize">URL instagram</label>
                         <input
-                            id="insta"
+                            id="social0"
                             type="url"
                             placeholder="Instagram"
                             className={inputTextStyle}
-                            {...register('insta', {
+                            {...register('social0', {
                                 required: 'instagram requerido',
                                 minLength:{
                                     value:20,
