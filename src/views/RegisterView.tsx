@@ -32,14 +32,6 @@ export default function RegisterView() {
         }catch (error){
             if(isAxiosError(error) && error.response){
                 console.log(error.response.data.error)
-                // if(e.response?.data.message){
-                //     alert(e.response?.data.message)
-                // }
-                // if(e.response?.data.errors){
-                //     for(const error in e.response?.data.errors){
-                //         alert(e.response?.data.errors[error])
-                //     }
-                // }
             }
         }
     }
