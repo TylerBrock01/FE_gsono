@@ -4,15 +4,14 @@ import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
 import {inputTextStyle} from "../components/misccomponent/InputTextStyle.ts";
 import type {Bussines} from "../typesModel/Bussines.ts";
 import axios,{isAxiosError} from "axios";
+import {toast} from "sonner";
 
 function addBussinestittle(){
     return(
         <h1 className="animate-slide-in-top flex justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
     )
 }
-
 export default function RegisterView() {
-    // console.log(errors)
     const intialValues = {
         name: '',
         logo: '',
@@ -23,15 +22,13 @@ export default function RegisterView() {
         chain: 'default',
     }
     const {register,reset, handleSubmit,/**watch,**/ formState: {errors}} = useForm<Bussines>({defaultValues: intialValues});
-    // const chain = watch('chain')
-    // console.log(chain)
     const handleRegister = async (formData: Bussines) => {
         try{
             const {data} = await axios.post(`${import.meta.env.VITE_API_URL}/auth/registerbussines`, formData)
-            console.log(data)
+            toast.success(data)
         }catch (error){
             if(isAxiosError(error) && error.response){
-                console.log(error.response.data.error)
+                toast.error(error.response.data.error)
             }
         }
         reset()

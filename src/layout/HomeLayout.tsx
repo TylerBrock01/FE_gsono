@@ -4,6 +4,7 @@ import NavBarComponent from "../components/homecomponent/NavBarComponent.tsx";
 import {scrollToTop} from "../components/misccomponent/ScrollTop.ts";
 import {MapIcon} from "@heroicons/react/24/solid";
 import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
+import {Toaster} from "sonner";
 
 export default function HomeLayout() {
     return (
@@ -43,7 +44,7 @@ export default function HomeLayout() {
                     </nav>
                 </footer>
             </div>
-
+            <Toaster/>
         </>
     )
 }
