@@ -22,7 +22,7 @@ export default function RegisterView() {
         description: '',
         chain: 'default',
     }
-    const {register, handleSubmit,/**watch,**/ formState: {errors}} = useForm<Bussines>({defaultValues: intialValues});
+    const {register,reset, handleSubmit,/**watch,**/ formState: {errors}} = useForm<Bussines>({defaultValues: intialValues});
     // const chain = watch('chain')
     // console.log(chain)
     const handleRegister = async (formData: Bussines) => {
@@ -34,6 +34,7 @@ export default function RegisterView() {
                 console.log(error.response.data.error)
             }
         }
+        reset()
     }
     return(
         <>
