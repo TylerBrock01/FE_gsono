@@ -1,7 +1,7 @@
 import {useForm} from 'react-hook-form'
 import ErrorMessage from "../components/ErrorMessage.tsx";
-import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
-import {inputTextStyle} from "../components/MiscComponent/InputTextStyle.ts";
+import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
+import {inputTextStyle} from "../components/misccomponent/InputTextStyle.ts";
 import type {Bussines} from "../typesModel/Bussines.ts";
 import axios,{isAxiosError} from "axios";
 

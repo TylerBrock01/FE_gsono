@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import HeroComponent from "../components/HomeComponent/HeroComponent.tsx";
+import HeroComponent from "../components/homecomponent/HeroComponent.tsx";
 
 export default function HomeView() {
 

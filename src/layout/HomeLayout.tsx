@@ -1,9 +1,9 @@
 import {Outlet} from "react-router-dom";
 import {Link} from 'react-router-dom'
-import NavBarComponent from "../components/HomeComponent/NavBarComponent.tsx";
-import {scrollToTop} from "../components/MiscComponent/ScrollTop.ts";
+import NavBarComponent from "../components/homecomponent/NavBarComponent.tsx";
+import {scrollToTop} from "../components/misccomponent/ScrollTop.ts";
 import {MapIcon} from "@heroicons/react/24/solid";
-import {ButtonStyle} from "../components/MiscComponent/ButtonStyle.ts";
+import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
 
 export default function HomeLayout() {
     return (

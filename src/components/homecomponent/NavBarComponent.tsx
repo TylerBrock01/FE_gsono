@@ -8,8 +8,8 @@ import {
     PhoneIcon, PhotoIcon, GlobeAmericasIcon,ExclamationTriangleIcon
 } from '@heroicons/react/24/solid'
 import {Link} from "react-router-dom";
-import {scrollToTop} from "../MiscComponent/ScrollTop.ts";
-import {ButtonStyle} from "../MiscComponent/ButtonStyle.ts";
+import {scrollToTop} from "../misccomponent/ScrollTop.ts";
+import {ButtonStyle} from "../misccomponent/ButtonStyle.ts";
 
 export default function NavBarComponent() {
 
