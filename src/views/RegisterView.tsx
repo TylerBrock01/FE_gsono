@@ -71,11 +71,6 @@ export default function RegisterView() {
                                     value:20,
                                     message: 'el link debe tener al menos caracteres'
                                 }
-                                // pattern: {
-                                //     value: /^(https?:\/\/)?(www\.)?(facebook\.com|fb\.com|fbcdn\.net|scontent\..*?\.fbcdn\.net)\/(.*?\/)?(photos|photo\.php|images|media|v|profilepic)\/.*?\.(jpg|jpeg|png|gif|webp)(\?.*)?$/,
-                                //     message: "URL de imagen de Facebook no válida",
-                                // },
-                                // validate : (value)=> value === url ||'url no valido'
                             })}
                         />
                         {errors.logo && <ErrorMessage>{errors.logo.message}</ErrorMessage>}
@@ -115,7 +110,7 @@ export default function RegisterView() {
                                 }
                             })}
                         />
-                        {errors.face && <ErrorMessage>{errors.face.message}</ErrorMessage>}
+                        {errors.social && <ErrorMessage>{errors.social.message}</ErrorMessage>}
 
                     </label>
                     {/*/!*social 0*!/*/}
@@ -134,7 +129,7 @@ export default function RegisterView() {
                                 }
                             })}
                         />
-                        {errors.insta && <ErrorMessage>{errors.insta.message}</ErrorMessage>}
+                        {errors.social0 && <ErrorMessage>{errors.social0.message}</ErrorMessage>}
 
                     </label>
                     {/*/!*description*!/*/}
