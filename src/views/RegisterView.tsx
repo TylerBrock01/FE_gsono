@@ -41,7 +41,7 @@ export default function RegisterView() {
             {addBussinestittle()}
             <form
                 onSubmit={handleSubmit(handleRegister)}
-                className="animate-blurred-fade-in  gap-2 py-2 border-black border-b-1 flex flex-col items-center"
+                className="animate-blurred-fade-in  gap-2 py-2 border-black border-t-1 flex flex-col items-center"
             >
                 <div className='bg-white  rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
                     {/*name*/}
@@ -69,8 +69,8 @@ export default function RegisterView() {
                             className={inputTextStyle}
                             {...register('logo', {
                                 required: 'logo requerido',
-                                minLength:{
-                                    value:20,
+                                minLength: {
+                                    value: 20,
                                     message: 'el link debe tener al menos caracteres'
                                 }
                             })}
@@ -87,8 +87,8 @@ export default function RegisterView() {
                             className={inputTextStyle}
                             {...register('location', {
                                 required: 'localizacion requerido',
-                                minLength:{
-                                    value:20,
+                                minLength: {
+                                    value: 20,
                                     message: 'el link debe tener al menos caracteres'
                                 }
                             })}
@@ -106,8 +106,8 @@ export default function RegisterView() {
                             className={inputTextStyle}
                             {...register('social', {
                                 required: 'facebook requerido',
-                                minLength:{
-                                    value:20,
+                                minLength: {
+                                    value: 20,
                                     message: 'el link debe tener al menos caracteres'
                                 }
                             })}
@@ -125,8 +125,8 @@ export default function RegisterView() {
                             className={inputTextStyle}
                             {...register('social0', {
                                 required: 'instagram requerido',
-                                minLength:{
-                                    value:20,
+                                minLength: {
+                                    value: 20,
                                     message: 'el link debe tener al menos caracteres'
                                 }
                             })}
@@ -158,11 +158,12 @@ export default function RegisterView() {
                                 className={inputTextStyle}
                                 {...register(
                                     'chain',
-                                    {required: 'tipo requerido',
+                                    {
+                                        required: 'tipo requerido',
                                         validate: (value) => value !== 'default' || 'seleccione un tipo'
                                     }
-                                    )
-                        } >
+                                )
+                                } >
                             <option id='' value="default" disabled={true} selected={true}>Seleccione</option>
                             <option id='gastronomia' value="gastronomia">Gastronomia</option>
                             <option id='compras' value="compras">Compras</option>
@@ -176,13 +177,12 @@ export default function RegisterView() {
                         <input
                             id="submit"
                             type="submit"
-                            className={"p-3 text-lg uppercase  rounded-lg font-bold cursor-pointer border-1 "+ButtonStyle}
+                            className={"p-3 text-lg uppercase  rounded-lg font-bold cursor-pointer border-1 " + ButtonStyle}
                             value='Crear Cuenta'
                         />
                     </div>
 
                 </div>
-
             </form>
         </>
     )
