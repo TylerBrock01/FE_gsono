@@ -44,7 +44,7 @@ export default function HomeLayout() {
                     </nav>
                 </footer>
             </div>
-            <Toaster/>
+            <Toaster position="top-center"/>
         </>
     )
 }
