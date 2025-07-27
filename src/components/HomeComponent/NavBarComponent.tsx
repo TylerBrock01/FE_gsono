@@ -5,7 +5,7 @@ import {
     BriefcaseIcon,
     CalendarIcon,
     NewspaperIcon,
-    PhoneIcon, PhotoIcon, GlobeAmericasIcon
+    PhoneIcon, PhotoIcon, GlobeAmericasIcon,ExclamationTriangleIcon
 } from '@heroicons/react/24/solid'
 import {Link} from "react-router-dom";
 import {scrollToTop} from "../MiscComponent/ScrollTop.ts";
@@ -21,7 +21,8 @@ export default function NavBarComponent() {
         {name: 'servicios', icon: BriefcaseIcon, id:'navService', path:"#"},
         {name: 'eventos', icon: CalendarIcon, id: 'navShows', path:"#"},
         {name: 'noticias', icon: NewspaperIcon, id: 'navNews', path:"#"},
-        {name: 'contacto', icon: PhoneIcon, id: 'navContact', path:"/register"}
+        {name: 'contacto', icon: PhoneIcon, id: 'navContact', path:"/register"},
+        {name: 'test', icon: ExclamationTriangleIcon, id: 'navTest', path:"/test"},
     ]
     return(
         <Popover className='flex items-center p-1'>
