@@ -3,8 +3,9 @@ import ErrorMessage from "../components/ErrorMessage.tsx";
 import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
 import {inputTextStyle} from "../components/misccomponent/InputTextStyle.ts";
 import type {Bussines} from "../typesModel/Bussines.ts";
-import axios,{isAxiosError} from "axios";
+import {isAxiosError} from "axios";
 import {toast} from "sonner";
+import api from "../config/axios.ts";
 
 function addBussinestittle(){
     return(
@@ -24,7 +25,7 @@ export default function RegisterView() {
     const {register,reset, handleSubmit,/**watch,**/ formState: {errors}} = useForm<Bussines>({defaultValues: intialValues});
     const handleRegister = async (formData: Bussines) => {
         try{
-            const {data} = await axios.post(`${import.meta.env.VITE_API_URL}/auth/registerbussines`, formData)
+            const {data} = await api.post(`/auth/registerbussines`, formData)
             toast.success(data)
         }catch (error){
             if(isAxiosError(error) && error.response){
