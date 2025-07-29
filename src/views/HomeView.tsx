@@ -12,9 +12,9 @@ export default function HomeView() {
             {/*hero*/}
             <HeroComponent/>
             {/*main*/}
-            <article className='border-b-5 text-white font-serif border-cyan-800 grid grid-cols-1 lg:grid-cols-2 gap-3'>
+            <section className='border-b-5 text-white font-serif border-cyan-800 grid grid-cols-1 lg:grid-cols-2 gap-3'>
                 {/*month business*/}
-                <section className=''>
+                <article className=''>
                     <h1 className='  text-5xl font-serif italic p-1  flex justify-center'>¡Negocio del Mes!</h1>
                     {/*bussines article*/}
                     <article className=' bg-white text-black capitalize p-2 '>
@@ -54,9 +54,9 @@ export default function HomeView() {
                             </aside>
                         </div>
                     </article>
-                </section>
+                </article>
                 {/*last business opened*/}
-                <section className=''>
+                <article className=''>
                     <h1 className='  text-5xl font-serif italic p-1  flex justify-center'>¡Negocio del Mes!</h1>
                     {/*bussines article*/}
                     <article className=' bg-white text-black capitalize p-2 '>
@@ -96,9 +96,9 @@ export default function HomeView() {
                             </aside>
                         </div>
                     </article>
-                </section>
+                </article>
 
-            </article>
+            </section>
             {/*hot*/}
             <h1 className='mt-1 capitalize text-5xl font-serif italic p-1 bg-white text-cyan-600 border-cyan-600 border-l-20  flex md:justify-center'>votados por la comunidad</h1>
         </>
