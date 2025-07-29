@@ -13,7 +13,7 @@ export default function HomeLayout() {
             <title>viva turismo</title>
             <link rel="shortcut icon" href="/src/img/dona.jpg" type="image/x-icon"   />
 
-            <div className=' bg-cyan-800 min-h-screen '>
+            <div className=' bg-cyan-600 min-h-screen '>
                 <div onClick={scrollToTop} className='sticky z-5 border-1 border-cyan-300 top-0 right-0 left-0 bg-cyan-600 animate-slide-in-top flex justify-between p-1'>
                     <Link  to='/' className=' font-serif text-white  flex text-4xl  italic capitalize font-medium decoration-2 underline underline-offset-3 rounded-md p-1 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400'>
                         viva turismo
