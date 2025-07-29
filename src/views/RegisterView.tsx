@@ -6,12 +6,9 @@ import type {Bussines} from "../typesModel/Bussines.ts";
 import {isAxiosError} from "axios";
 import {toast} from "sonner";
 import api from "../config/axios.ts";
+import TittleComponent from "../components/TittleComponent.tsx";
 
-function addBussinestittle(){
-    return(
-        <h1 className="animate-slide-in-top flex justify-center text-4xl bg-cyan-700 text-white font-bold capitalize px-4 py-1">agregar negocio</h1>
-    )
-}
+
 export default function RegisterView() {
     const intialValues = {
         name: '',
@@ -36,10 +33,10 @@ export default function RegisterView() {
     }
     return(
         <>
-            {addBussinestittle()}
+            {<TittleComponent>agregar negocio</TittleComponent>}
             <form
                 onSubmit={handleSubmit(handleRegister)}
-                className="animate-blurred-fade-in  gap-2 py-2 border-black border-t-1 flex flex-col items-center"
+                className="animate-blurred-fade-in  gap-2 py-2  flex flex-col items-center"
             >
                 <div className='bg-white  rounded-2xl mt-2 w-80 md:w-100 gap-2 p-2 px-4 font-light'>
                     {/*name*/}
