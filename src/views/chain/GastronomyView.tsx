@@ -17,7 +17,7 @@ export default function GastronomyView() {
                     </label>
                     <div className='grid-cols-2 grid gap-1'>
                         <section className='grid gap-1'>
-                            <img className='h-auto rounded-md' src={'/src/img/dona.jpg'} alt='dona'/>
+                            <img className='h-45 w-50 rounded-md' src={'https://as1.ftcdn.net/v2/jpg/04/19/31/50/1000_F_419315027_H0G3ycDGIsUlD9OvzQfqyylqxQKgrOMy.jpg'} alt='dona'/>
                             <div className='grid gap-1'>
                                 <Link to='#' className='py-1 rounded-md bg-blue-500 border-black/60 border-1 flex justify-center capitalize'>facebook</Link>
                                 <Link to='#' className='py-1 rounded-md bg-pink-500 border-black/60 border-1 flex justify-center capitalize'>instagram</Link>
@@ -40,7 +40,7 @@ export default function GastronomyView() {
                     </label>
                     <div className='grid-cols-2 grid gap-1'>
                         <section className='grid gap-1'>
-                            <img className='h-auto rounded-md' src={'/src/img/dona.jpg'} alt='dona'/>
+                            <img className='h-45 rounded-md' src={'https://as2.ftcdn.net/v2/jpg/16/07/53/33/1000_F_1607533383_jLO5VUxjOs67tufUer2ZUXbBPye6YXlV.jpg'} alt='dona'/>
                             <div className='grid gap-1'>
                                 <Link to='#' className='py-1 rounded-md bg-blue-500 border-black/60 border-1 flex justify-center capitalize'>facebook</Link>
                                 <Link to='#' className='py-1 rounded-md bg-pink-500 border-black/60 border-1 flex justify-center capitalize'>instagram</Link>
