@@ -15,7 +15,7 @@ export default function NavBarComponent() {
 
 
     const categories = [
-        {name: 'gastronomia', icon: GlobeAmericasIcon , id: 'navGastronomy', path:"/"},
+        {name: 'gastronomia', icon: GlobeAmericasIcon , id: 'navGastronomy', path:"/gastronomy"},
         {name: 'compras', icon: ShoppingBagIcon, id:'navSales', path:"#"},
         {name: 'experiencia', icon:PhotoIcon, id:'navExperience', path:"#" },
         {name: 'servicios', icon: BriefcaseIcon, id:'navService', path:"#"},
