@@ -1,1 +1,1 @@
-export const ButtonStyle: string = ' cursor-pointer text-white border-1 bg-cyan-500 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400'
+export const ButtonStyle: string = ' cursor-pointer text-white border-1 bg-cyan-500 border-cyan-100 hover:border-cyan-400 hover:bg-cyan-800 hover:text-cyan-400 '
