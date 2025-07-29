@@ -8,7 +8,7 @@ export default function GastronomyView() {
     return(
         <>
             {<TittleComponent>Gastronomia</TittleComponent>}
-            <section className='grid gap-1 bg-cyan-700 '>
+            <section className='grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-cyan-700 '>
                 {/**/}
                 <article className={card}>
                     <label className='bg-cyan-500 rounded-md flex gap-1 p-1 '>
