@@ -12,20 +12,20 @@ export default function HomeView() {
             {/*hero*/}
             <HeroComponent/>
             {/*main*/}
-            <article className='border-b-5 text-white font-serif border-l-10 border-cyan-600 grid grid-cols-1 lg:grid-cols-2'>
+            <article className='border-b-5 text-white font-serif border-cyan-800 grid grid-cols-1 lg:grid-cols-2 gap-3'>
                 {/*month business*/}
                 <section className=''>
-                    <h1 className='  text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Negocio del Mes!</h1>
+                    <h1 className='  text-5xl font-serif italic p-1  flex justify-center'>¡Negocio del Mes!</h1>
                     {/*bussines article*/}
                     <article className=' bg-white text-black capitalize p-2 '>
                         {/*Business name*/}
                         <h2 className=' text-3xl flex gap-2 pb-1'>
                             Be a Man'
                         </h2>
-                        <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
-                            <div className=' justify-center p-1 grid gap-1'>
+                        <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2 '>
+                            <div className=' justify-center p-1 grid gap-1 lg:h-80'>
                                 {/*image bussines*/}
-                                <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
+                                <img className="" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=n8NQic2S-RQQ7kNvwFa58ia&_nc_oc=AdkXJPADdg2oZqchru-7hVFA7sgBNQR0M_Dl2V6VhYt2RI0OuQOb_IUIH_xiXZJw_C26qTOysrtRuqjBrIKDChbu&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=2FnnyU2YfUXliCBhOd3Y4g&oh=00_AfTSJ6kz3HsrIO0LpkwZDwxWsiYIO6tuTWmc9xvZk0GmqQ&oe=688CE3DB'} alt='persy'/>
 
                                 {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
@@ -57,7 +57,7 @@ export default function HomeView() {
                 </section>
                 {/*last business opened*/}
                 <section className=''>
-                    <h1 className='  text-5xl font-serif italic p-1 bg-cyan-600 flex justify-center'>¡Negocio del Mes!</h1>
+                    <h1 className='  text-5xl font-serif italic p-1  flex justify-center'>¡Negocio del Mes!</h1>
                     {/*bussines article*/}
                     <article className=' bg-white text-black capitalize p-2 '>
                         {/*Business name*/}
@@ -65,9 +65,9 @@ export default function HomeView() {
                             Be a Man'
                         </h2>
                         <div className=' md:grid grid-cols-2 gap-2 p-2 border-cyan-500 border-2'>
-                            <div className=' justify-center p-1 grid gap-1'>
+                            <div className=' justify-center p-1 grid gap-1 lg:h-80'>
                                 {/*image bussines*/}
-                                <img className=" lg:h-80" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Vd4txfvWmIQ7kNvwGXopQ2&_nc_oc=AdnsKsFvgMynAOhzkrqb9VAhi85FZCB98n7j-g4tYfLclcjfwBMEiKSOZRsaWXabqJpAlrSaXPa2r6n7_1s68yKd&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=mMj_GLHByff9W7oBjQr1Qw&oh=00_AfS4UPf7AoBiQuAQwBBY7ZQ2TAQGEVFHuiy7FjSbECYscQ&oe=68732E9B'} alt='persy'/>
+                                <img className="" src={'https://scontent.fgym1-1.fna.fbcdn.net/v/t39.30808-6/292536013_181272234281438_7543689233643120396_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=n8NQic2S-RQQ7kNvwFa58ia&_nc_oc=AdkXJPADdg2oZqchru-7hVFA7sgBNQR0M_Dl2V6VhYt2RI0OuQOb_IUIH_xiXZJw_C26qTOysrtRuqjBrIKDChbu&_nc_zt=23&_nc_ht=scontent.fgym1-1.fna&_nc_gid=2FnnyU2YfUXliCBhOd3Y4g&oh=00_AfTSJ6kz3HsrIO0LpkwZDwxWsiYIO6tuTWmc9xvZk0GmqQ&oe=688CE3DB'} alt='persy'/>
 
                                 {/*social link business*/}
                                 <Link className='bg-blue-600 py-1 flex text-white justify-center items-center gap-1' to='https://www.facebook.com/bostonbeaman'>
