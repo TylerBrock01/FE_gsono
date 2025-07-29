@@ -35,10 +35,10 @@ export default function HomeLayout() {
                 <div>
                     <Outlet/>
                 </div>
-                <footer className='text-white p-2'>
+                <footer className='border-t-1 py-2 flex justify-center text-white'>
                     <nav className=" grid justify-center capitalize gap-1">
-                        <Link className='text-white bg-cyan-800  flex justify-center rounded-full' to="/">Home</Link>
-                        <Link className='text-white bg-gray-400' to="/about">Acerca de nosotros</Link>
+                        <Link className='text-white bg-cyan-800  flex justify-center rounded-full p-1' to="/">Home</Link>
+                        <Link className='text-white bg-cyan-800 flex justify-center rounded-full p-1' to="/about">Acerca de nosotros</Link>
                         <h2 className='flex justify-center'>Copyright 2025</h2>
 
                     </nav>
