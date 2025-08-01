@@ -4,7 +4,7 @@ import AboutView from "./views/AboutView.tsx";
 import HomeLayout from "./layout/HomeLayout.tsx";
 import RegisterView from "./views/RegisterView.tsx";
 import TestView from "./views/TestView.tsx";
-import GastronomyView from "./views/chain/GastronomyView.tsx";
+import {GastronomyView} from "./views/chain/GastronomyView.tsx";
 
 export default function  Router(){
     return(
