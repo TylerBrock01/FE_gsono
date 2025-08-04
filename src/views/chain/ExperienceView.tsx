@@ -1,14 +1,13 @@
 import TittleComponent from "../../components/TittleComponent.tsx";
 import ShowBussinesChain from "../../components/misccomponent/ShowBussinesChain.tsx";
 
-export default function GastronomyView() {
-
+export default function ExperienceView() {
     return (
         <>
-            {<TittleComponent>Gastronomia</TittleComponent>}
+            {<TittleComponent>experiencia</TittleComponent>}
             <section className='grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-cyan-700 p-1'>
                 {/**/}
-                {<ShowBussinesChain>{'gastronomia'}</ShowBussinesChain>}
+                {<ShowBussinesChain>{'experiencia'}</ShowBussinesChain>}
             </section>
         </>
     )
