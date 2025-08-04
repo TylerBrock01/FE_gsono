@@ -60,8 +60,8 @@ export default function ShowBussinesChain({children} : {children: React.ReactNod
                     </label>
                     <div className='grid-cols-2 grid gap-1'>
                         <section className='grid gap-1'>
-                            <img className='h-45 w-50 rounded-md'
-                                 src={'https://as1.ftcdn.net/v2/jpg/04/19/31/50/1000_F_419315027_H0G3ycDGIsUlD9OvzQfqyylqxQKgrOMy.jpg'}
+                            <img className='h-45 w-auto rounded-md'
+                                 src={bussinesItem.logo}
                                  alt='dona'/>
                             <div className='grid gap-1'>
                                 <Link to='#'
