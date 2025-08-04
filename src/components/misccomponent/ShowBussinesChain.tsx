@@ -10,16 +10,15 @@ import {ButtonStyle} from "./ButtonStyle.ts";
 import {card} from "./CardStyle.ts";
 import {BuildingStorefrontIcon} from "@heroicons/react/16/solid";
 
-export default function ShowBussinesChain() {
+export default function ShowBussinesChain({children} : {children: React.ReactNode}) {
     const [bussinesList, setBussinesList] = useState<Bussines[]>([]);
 
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-
     useEffect(() => {
         const fetchBussines = async () => {
             try {
-                const response = await api.get(`/showchainbussines`, { params: { chain: 'experiencia' } });
+                const response = await api.get(`/showchainbussines`, { params: { chain: children } });
                 if (Array.isArray(response.data)) {
                     setBussinesList(response.data);
                     toast.success("Datos cargados correctamente");

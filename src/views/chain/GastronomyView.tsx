@@ -8,7 +8,7 @@ export function GastronomyView() {
             {<TittleComponent>Gastronomia</TittleComponent>}
             <section className='grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-cyan-700 p-1'>
                 {/**/}
-                {<ShowBussinesChain></ShowBussinesChain>}
+                {<ShowBussinesChain>{'experiencia'}</ShowBussinesChain>}
             </section>
         </>
     )
