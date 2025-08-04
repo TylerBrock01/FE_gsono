@@ -43,7 +43,7 @@ export default function ShowBussinesChain({children} : {children: React.ReactNod
 
     if (error) {
         console.log(error);
-        return <p>Hubo un error. No se pueden mostrar los negocios.</p>;
+        return <p className=' bg-white  rounded-md flex justify-center p-3 text-2xl'>No se encontraron negocios para esta cadena.</p>;
     }
 
     if (bussinesList.length === 0) {
