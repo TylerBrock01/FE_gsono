@@ -1,5 +1,5 @@
 import TittleComponent from "../../components/TittleComponent.tsx";
-import ShowBussinesChain from "../../components/misccomponent/ShowBussinesChain.tsx";
+import ShowBussinesChain from "../../actions/ShowBussinesChain.tsx";
 
 export default function ExperienceView() {
     return (

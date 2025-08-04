@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
-import api from "../../config/axios.ts";
+import api from "../config/axios.ts";
 import { isAxiosError } from "axios";
-import type { Bussines } from "../../typesModel/Bussines.ts";
+import type { Bussines } from "../typesModel/Bussines.ts";
 import {Link} from "react-router-dom";
 import {MapIcon} from "@heroicons/react/24/solid";
-import {ButtonStyle} from "./ButtonStyle.ts";
-import {card} from "./CardStyle.ts";
+import {ButtonStyle} from "../components/misccomponent/ButtonStyle.ts";
+import {card} from "../components/misccomponent/CardStyle.ts";
 import {BuildingStorefrontIcon} from "@heroicons/react/16/solid";
 
-export default function ShowBussinesChain({children} : {children: React.ReactNode}) {
+export default function SelectBussinesName({children} : {children: React.ReactNode}) {
     const [bussinesList, setBussinesList] = useState<Bussines[]>([]);
 
     const [loading, setLoading] = useState<boolean>(true);
@@ -16,7 +16,7 @@ export default function ShowBussinesChain({children} : {children: React.ReactNod
     useEffect(() => {
         const fetchBussines = async () => {
             try {
-                const response = await api.get(`/showchainbussines`, { params: { chain: children } });
+                const response = await api.get(`/selectbussines`, { params: { name: children } });
                 if (Array.isArray(response.data)) {
                     setBussinesList(response.data);
                 } else {
