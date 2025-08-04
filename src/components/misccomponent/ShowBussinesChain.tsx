@@ -1,7 +1,5 @@
-// src/components/ShowBussinesChain.tsx
 import { useEffect, useState } from 'react';
 import api from "../../config/axios.ts";
-import { toast } from "sonner";
 import { isAxiosError } from "axios";
 import type { Bussines } from "../../typesModel/Bussines.ts";
 import {Link} from "react-router-dom";
@@ -21,7 +19,6 @@ export default function ShowBussinesChain({children} : {children: React.ReactNod
                 const response = await api.get(`/showchainbussines`, { params: { chain: children } });
                 if (Array.isArray(response.data)) {
                     setBussinesList(response.data);
-                    toast.success("Datos cargados correctamente");
                 } else {
                     throw new Error("El formato de la respuesta de la API no es un array.");
                 }
