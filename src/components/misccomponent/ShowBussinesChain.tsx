@@ -4,6 +4,11 @@ import api from "../../config/axios.ts";
 import { toast } from "sonner";
 import { isAxiosError } from "axios";
 import type { Bussines } from "../../typesModel/Bussines.ts";
+import {Link} from "react-router-dom";
+import {MapIcon} from "@heroicons/react/24/solid";
+import {ButtonStyle} from "./ButtonStyle.ts";
+import {card} from "./CardStyle.ts";
+import {BuildingStorefrontIcon} from "@heroicons/react/16/solid";
 
 export default function ShowBussinesChain() {
     const [bussinesList, setBussinesList] = useState<Bussines[]>([]);
@@ -50,15 +55,37 @@ export default function ShowBussinesChain() {
     }
 
     return (
-        <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Negocios</h1>
-            <ul>
-                {bussinesList.map((bussinesItem: Bussines) => (
-                    <li>
-                        {bussinesItem.name}
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <>
+            {bussinesList.map((bussinesItem: Bussines) => (
+                <article className={card}>
+                    <label className='bg-cyan-500 rounded-md flex gap-1 p-1 '>
+                        <BuildingStorefrontIcon className=' text-white h-9'></BuildingStorefrontIcon>
+                        <h1 className='text-2xl capitalize font-serif flex items-center'>{bussinesItem.name}</h1>
+                    </label>
+                    <div className='grid-cols-2 grid gap-1'>
+                        <section className='grid gap-1'>
+                            <img className='h-45 w-50 rounded-md'
+                                 src={'https://as1.ftcdn.net/v2/jpg/04/19/31/50/1000_F_419315027_H0G3ycDGIsUlD9OvzQfqyylqxQKgrOMy.jpg'}
+                                 alt='dona'/>
+                            <div className='grid gap-1'>
+                                <Link to='#'
+                                      className='py-1 rounded-md bg-blue-500 border-black/60 border-1 flex justify-center capitalize'>facebook</Link>
+                                <Link to='#'
+                                      className='py-1 rounded-md bg-pink-500 border-black/60 border-1 flex justify-center capitalize'>instagram</Link>
+
+                            </div>
+
+                        </section>
+                        <article className='grid'>
+                            <p className='bg-cyan-500 p-1 rounded-md'>{bussinesItem.description}</p>
+                            <p className=' m-1 rounded-md capitalize grid items-center '>#{bussinesItem.chain}</p>
+                            <Link to={bussinesItem.location} className={ButtonStyle + "mt-1 rounded-md py-1 flex justify-center capitalize text-md items-center gap-1"}>
+                                <MapIcon className='h-8'></MapIcon>Visitanos!</Link>
+                        </article>
+
+                    </div>
+                </article>
+            ))}
+        </>
     );
 }
