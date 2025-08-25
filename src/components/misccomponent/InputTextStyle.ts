@@ -1,1 +1,0 @@
-export const inputTextStyle = 'bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400'
