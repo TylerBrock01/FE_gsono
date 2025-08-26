@@ -4,7 +4,7 @@ export default function HomeLayout() {
     return(
         <>
             {/*<h1 className='bg-sky-500'>Home Log in</h1>*/}
-            <div className="bg-sky-500 py-30">
+            <div className="bg-sky-500 py-30 md:py-40">
                 <Outlet/>
             </div>
         </>
