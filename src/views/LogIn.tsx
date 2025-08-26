@@ -1,4 +1,3 @@
-import ButtonStyle from "../ButtonStyle.tsx";
 import {
     AlertDialog,
     AlertDialogCancel,
@@ -8,8 +7,7 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
+} from "../components/ui/alert-dialog"
 export default function LogIn() {
     const xd= 'w-80'
     return(
@@ -28,7 +26,7 @@ export default function LogIn() {
                             <input className=' focus:outline-blue-400 bg-white rounded-md px-2 text-slate-700/70' type="password" placeholder="Ingresar clave"/>
                         </label>
                         <label className='grid'>
-                            <Button>Button</Button>
+                            <a href="/home" className="bg-sky-500 rounded-full p-1 text-white flex justify-center hover:bg-sky-600">Ingresa</a>
                         </label>
                         <label className='flex justify-center'>
                             <AlertDialog>
