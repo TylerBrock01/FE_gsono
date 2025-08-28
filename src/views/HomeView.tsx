@@ -3,14 +3,14 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
-import type {itsonServiceModel} from "../ItsonServiceModel.ts";
+} from "../components/ui/accordion"
+import type {ItsonServiceModel} from "../ItsonServiceModel.ts";
 
 export default function HomeView() {
-    const itsonService : itsonServiceModel[] = [
+    const itsonService : ItsonServiceModel[] = [
         {
             nameOption: "Autoservicio",
-            serviceOption: [
+            serviceOption:  [
                 {name: "horario", url: "/test"},
                 {name: "bajas", url: "/test"},
             ]
