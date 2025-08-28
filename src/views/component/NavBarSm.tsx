@@ -2,6 +2,7 @@ const option = [
     {name: "inicio", url :"#", style: "bg-blue-700 text-white"},
     {name: "favoritos", url :"#", style: "bg-yellow-300"},
     {name: "desconexion", url :"/", style: "bg-red-800 text-white"},
+    {name: "Comunidad", url :"#", style: "bg-sky-300 "},
 ]
 
 export default function NavBarSm (){
