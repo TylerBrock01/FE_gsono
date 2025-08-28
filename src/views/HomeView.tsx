@@ -19,10 +19,10 @@ export default function HomeView() {
     return(
         <>
             <section className="flex justify-between p-1 capitalize items-center">
-                <h1 className="text-xl">Menu</h1>
+                <h1 className="text-xl font-serif">Bienvenido</h1>
             </section>
             {/*nav sm*/}
-            <div className='mt-1 md:hidden gap-2'>
+            <div className='mt-1 md:hidden gap-2 font-serif'>
                 <Accordion type="single" collapsible>
                     {itsonService.map((item, index) => (
                         <AccordionItem key={index} value={item.nameOption}>
