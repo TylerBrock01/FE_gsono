@@ -1,9 +1,10 @@
-export type itsonServiceModel ={
+ export type ServiceOptionModel =
+    {
+        name: string,
+        url: string,
+    }
+
+export type ItsonServiceModel ={
     nameOption : string,
-    serviceOption:[
-        {
-            name: string,
-            url: string,
-        }
-    ]
+    serviceOption: ServiceOptionModel[],
 }
