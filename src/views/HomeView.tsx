@@ -18,7 +18,7 @@ export default function HomeView() {
             ]
         },
         {
-            nameOption: "Test2",
+            nameOption: "Reportes",
             serviceOption:  [
                 {name: "horario", url: "/test"},
                 {name: "bajas", url: "/test"},
@@ -51,7 +51,7 @@ export default function HomeView() {
                 </Accordion>
             </div>
             {/*nav md*/}
-            <div className="hidden md:grid gap-2 md:grid-cols-2 ">
+            <div className="hidden md:grid gap-2 md:grid-cols-3 lg:grid-cols-6 ">
                 {itsonService.map((item, index) => (
                     <div key={index} className="grid capitalize bg-sky-500 text-white rounded-md p-2 gap-1">
                         <h1 className="text-xl font-serif">{item.nameOption}</h1>
