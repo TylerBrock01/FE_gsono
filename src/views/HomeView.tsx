@@ -4,61 +4,59 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import type {itsonServiceModel} from "../ItsonServiceModel.ts";
 
 export default function HomeView() {
-    const autoservicio = [
-        {name: "inscripciones", url :"#"},
-        {name: "finanzas de campus", url :"#"},
-        {name: "Datos personales", url :"#"},
-        {name: "Registros academicos ", url :"#"},
-        {name: "progreso de graduacion ", url :"#"},
-        {name: "convalidaciones", url :"#"},
-        {name: "admision alumnos", url :"#"}
+    const itsonService : itsonServiceModel[] = [
+        {
+            nameOption: "Autoservicio",
+            serviceOption: [
+                {name: "horario", url: "/test"},
+                {name: "bajas", url: "/test"},
+            ]
+        },
     ]
     return(
         <>
-            <section className="flex justify-between p-1 capitalize">
-                <h1>Menu</h1>
-                <h2>Comunidad del campus</h2>
+            <section className="flex justify-between p-1 capitalize items-center">
+                <h1 className="">Menu</h1>
+                <a href="#" className=" rounded-md bg-sky-500 text-white px-1">Comunidad del campus</a>
             </section>
-            <div className=''>
+            {/*nav sm*/}
+            <div className='mt-1 md:hidden gap-2'>
                 <Accordion type="single" collapsible>
+                    {itsonService.map((item, index) => (
+                        <AccordionItem key={index} value={item.nameOption}>
+                            <AccordionTrigger>{item.nameOption}</AccordionTrigger>
+                            <AccordionContent>
+                                <div className='grid gap-1 capitalize'>
+                                    {item.serviceOption.map((item, index) => (
+                                        <a href={item.url} className="ml-1 bg-sky-400 hover:bg-sky-600 p-2 rounded-md capitalize" key={index} > {item.name}</a>
+                                    ))}
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Autoservicio</AccordionTrigger>
                         <AccordionContent>
                             <div className='grid gap-1 capitalize'>
-                                {autoservicio.map((item, index) => (
-                                    <a className=" bg-sky-800 py-3 hover:bg-sky-900 grid rounded-md justify-center" href={item.url} key={index}>{item.name}</a>
-                                ))}
+
                             </div>
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-2">
-                        <AccordionTrigger>Comunidad</AccordionTrigger>
-                        <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                        <AccordionTrigger>Registros academicos</AccordionTrigger>
-                        <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-4">
-                        <AccordionTrigger>Progreso/Graduacion</AccordionTrigger>
-                        <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-5">
-                        <AccordionTrigger>Registros academicos</AccordionTrigger>
-                        <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
                         </AccordionContent>
                     </AccordionItem>
 
                 </Accordion>
+            </div>
+            {/*nav md*/}
+            <div className="hidden md:grid gap-2 md:grid-cols-2 ">
+                {/*<div className="bg-sky-500  rounded-md p-1">*/}
+                {/*    {itsonService.map((item, index) => (*/}
+                {/*        <h1 className="capitalize border-b-2" key={index} > {item.nameOption}</h1>*/}
+                {/*        <div className="grid capitalize py-1 gap-1 text-white"></div>*/}
+
+                {/*        ))}*/}
+                {/*</div>*/}
             </div>
         </>
     )
