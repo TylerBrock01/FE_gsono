@@ -20,7 +20,6 @@ export default function HomeView() {
         <>
             <section className="flex justify-between p-1 capitalize items-center">
                 <h1 className="text-xl">Menu</h1>
-                <a href="#" className=" rounded-md bg-sky-500 text-white px-1">Comunidad del campus</a>
             </section>
             {/*nav sm*/}
             <div className='mt-1 md:hidden gap-2'>
