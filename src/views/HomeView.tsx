@@ -19,7 +19,7 @@ export default function HomeView() {
     return(
         <>
             <section className="flex justify-between p-1 capitalize items-center">
-                <h1 className="">Menu</h1>
+                <h1 className="text-xl">Menu</h1>
                 <a href="#" className=" rounded-md bg-sky-500 text-white px-1">Comunidad del campus</a>
             </section>
             {/*nav sm*/}
@@ -31,7 +31,7 @@ export default function HomeView() {
                             <AccordionContent>
                                 <div className='grid gap-1 capitalize'>
                                     {item.serviceOption.map((item, index) => (
-                                        <a href={item.url} className="ml-1 bg-sky-400 hover:bg-sky-600 p-2 rounded-md capitalize" key={index} > {item.name}</a>
+                                        <a href={item.url} className="mx-1 text-sm bg-sky-400 hover:bg-sky-600 p-2 rounded-md capitalize" key={index} > {item.name}</a>
                                     ))}
                                 </div>
                             </AccordionContent>
