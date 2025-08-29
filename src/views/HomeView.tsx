@@ -4,30 +4,10 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "../components/ui/accordion"
-import type {ItsonServiceModel} from "../ItsonServiceModel.ts";
+import {itsonService, type ItsonServiceModel} from "../ItsonServiceModel.ts";
+import NavHomeLg from "./component/NavHomeLg.tsx";
 
 export default function HomeView() {
-    const itsonService : ItsonServiceModel[] = [
-        {
-            nameOption: "Autoservicio",
-            serviceOption:  [
-                {name: "horario", url: "/test"},
-                {name: "bajas", url: "/test"},
-                {name: "reservas", url: "/test"},
-
-            ]
-        },
-        {
-            nameOption: "Reportes",
-            serviceOption:  [
-                {name: "horario", url: "/test"},
-                {name: "bajas", url: "/test"},
-                {name: "reservas", url: "/test"},
-
-            ]
-        },
-
-    ]
     return(
         <>
             <section className="flex justify-between p-1 capitalize items-center">
@@ -51,7 +31,7 @@ export default function HomeView() {
                 </Accordion>
             </div>
             {/*nav md*/}
-            <div className="hidden md:grid gap-2 md:grid-cols-3 lg:grid-cols-6 ">
+            <div className="hidden md:grid lg:hidden gap-2 md:grid-cols-3 lg:grid-cols-6 ">
                 {itsonService.map((item, index) => (
                     <div key={index} className="grid capitalize bg-sky-500 text-white rounded-md p-2 gap-1">
                         <h1 className="text-xl font-serif">{item.nameOption}</h1>
@@ -62,6 +42,10 @@ export default function HomeView() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className="hidden lg:flex">
+                {NavHomeLg()}
             </div>
         </>
     )
