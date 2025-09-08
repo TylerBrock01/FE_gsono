@@ -11,9 +11,9 @@ export const itsonService : ItsonServiceModel[] = [
     {
         nameOption: "Reportes",
         serviceOption:  [
-            {name: "horario", url: "/test"},
-            {name: "bajas", url: "/test"},
-            {name: "reservas", url: "/test"},
+            {name: "uwu", url: "/test"},
+            {name: "xdd", url: "/test"},
+            {name: "132", url: "/test"},
 
         ]
     },
