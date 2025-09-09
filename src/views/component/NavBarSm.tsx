@@ -10,7 +10,7 @@ export default function NavBarSm (){
         <>
             {
                 option.map((item, index) => (
-                    <a key={index} className={item.style+" "+"font-serif p-1 rounded-md grid items-center"} href={item.url}>{item.name}</a>
+                    <a key={index} className={item.style+" "+"font-serif p-2 rounded-md flex items-center"} href={item.url}>{item.name}</a>
                 ))
             }
         </>

@@ -10,26 +10,24 @@ import {itsonService} from "../../ItsonServiceModel.ts";
 
 export default function NavHomeLg() {
     return(
-        <>
-            <>
-                    {itsonService.map((item, index) => (
-                        <NavigationMenu>
-                            <NavigationMenuList>
-                                <NavigationMenuItem>
-                                    <NavigationMenuTrigger key={index}>{item.nameOption}</NavigationMenuTrigger>
-                                    <NavigationMenuContent>
-                                        {item.serviceOption.map((item, index) => (
-                                            <NavigationMenuLink key={index} href>
-                                                <a href={item.url}>{item.name}</a>
-                                            </NavigationMenuLink>
-                                        ))}
-                                    </NavigationMenuContent>
-                                </NavigationMenuItem>
-                            </NavigationMenuList>
-                        </NavigationMenu>
-                    ))
-                    }
-            </>
-        </>
+        <div className="flex gap-1">
+            {itsonService.map((item, index) => (
+                <NavigationMenu>
+                    <NavigationMenuList>
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger key={index}>{item.nameOption}</NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                                {item.serviceOption.map((item, index) => (
+                                    <NavigationMenuLink key={index} href>
+                                        <a href={item.url}>{item.name}</a>
+                                    </NavigationMenuLink>
+                                ))}
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
+            ))
+            }
+        </div>
     )
 }

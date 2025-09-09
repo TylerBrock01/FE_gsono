@@ -4,7 +4,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "../components/ui/accordion"
-import {itsonService, type ItsonServiceModel} from "../ItsonServiceModel.ts";
+import {itsonService} from "../ItsonServiceModel.ts";
 import NavHomeLg from "./component/NavHomeLg.tsx";
 
 export default function HomeView() {
