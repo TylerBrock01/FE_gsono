@@ -8,10 +8,8 @@ export default function profileLayout() {
                 <label className="grid bg-sky-500">
                     <img alt='xd' className=' h-15 ' src="https://apps9.itson.edu.mx/CIA/img/ITSON-MARCA.png"/>
                 </label>
-                <div className="bg-sky-500 flex gap-1 justify-start md:justify-end  capitalize">
-                    <div className="flex gap-1">
-                        {NavBarSm()}
-                    </div>
+                <div className="bg-sky-500 flex gap-1 justify-center md:justify-end  capitalize">
+                    {NavBarSm()}
                 </div>
             </div>
             <div className="bg-sky-200 p-2">
