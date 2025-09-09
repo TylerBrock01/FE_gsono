@@ -7,7 +7,7 @@ import {
 import {itsonService} from "../ItsonServiceModel.ts";
 import NavHomeLg from "./component/NavHomeLg.tsx";
 
-export default function HomeView() {
+export default function ProfileHomeView() {
     return(
         <div className="lg:flex justify-between">
             <section className="flex justify-between p-1 capitalize items-center">

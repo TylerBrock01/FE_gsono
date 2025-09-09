@@ -3,7 +3,7 @@ import LogIn from "./views/LogIn.tsx";
 import LogInLayout from "./layout/LogInLayout.tsx";
 import TestView from "./views/TestView.tsx";
 import ProfileLayout from "./layout/ProfileLayout.tsx";
-import HomeView from "./views/HomeView.tsx";
+import ProfileHomeView from "./views/ProfileHomeView.tsx";
 
 export default function  Router(){
     return(
@@ -16,7 +16,7 @@ export default function  Router(){
             </Routes>
             <Routes>
                 <Route element={<ProfileLayout />}>
-                    <Route path='/home' element={<HomeView/>} />
+                    <Route path='/home' element={<ProfileHomeView/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
