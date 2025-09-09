@@ -9,7 +9,7 @@ import NavHomeLg from "./component/NavHomeLg.tsx";
 
 export default function HomeView() {
     return(
-        <>
+        <div className="lg:flex justify-between">
             <section className="flex justify-between p-1 capitalize items-center">
                 <h1 className="text-xl font-serif">Bienvenido</h1>
             </section>
@@ -44,9 +44,9 @@ export default function HomeView() {
                 ))}
             </div>
 
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex ">
                 {NavHomeLg()}
             </div>
-        </>
+        </div>
     )
 }
